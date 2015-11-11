@@ -48,11 +48,11 @@ div.menu nav a {
  	transition: all 0.3s;
  }
 
- div.menu nav a:hover:before {
+div.menu nav a:hover:before {
  	left: 0%;
  }
 
- div.menu nav a:before {
+div.menu nav a:before {
 	content: "";
 	position: absolute;
 	top: 90%;
@@ -64,9 +64,97 @@ div.menu nav a {
 	z-index: 1;
  } 
 
- div.menu img.logo {
+div.menu img.logo {
  	display: inline-block;
  	vertical-align: middle;
  	width: 200px;
  	height: 100px;
  }
+
+section.about {
+ 	display: block;
+ 	text-align: center;
+ 	padding:50px calc((100vw - 1200px) / 2);
+ }
+
+section.about p {
+ 	display: block;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	padding-bottom:  10px;
+ 	width: 650px;
+ 	font-size:  1.3em;
+ }
+
+ section.about p strong {
+ 	padding-bottom: 10px;
+ }
+
+ section.campaign,
+ section.instegram,
+ section.leads {
+ 	display: block;
+ 	text-align: center;
+ 	padding:0px calc((100vw - 1200px) / 2);
+ }
+
+ section.campaign {
+ 	background-image:  url(../images/carousel-background.jpg);
+ 	background-repeat:  no-repeat;
+ 	background-position: center top;
+ 	background-size: 1920px 600px;
+ 	min-height:  600px;
+ }
+
+ section.campaign h2 {
+	display: inline-block;
+	margin-top:  -20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-weight: 400;
+	line-height: 1.75em;
+	color: #2DBDB6;
+	border: 1px solid #2DBDB6;
+	position: relative;
+ }
+
+section.campaign h2:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	margin-top:  -51px;
+	left: 50%;
+	margin-left:  -91px;
+	width: 180px;
+	height: 100px;
+	border: 1px solid #2DBDB6;
+} 
+
+ section.instegram {
+ 	background-image:  url(../images/instagram-background.jpg);
+ 	background-repeat:  no-repeat;
+ 	background-position: center top;
+ 	background-size: 1920px 600px;
+ 	min-height:  600px;
+ }
+
+ section.leads {
+ 	background-image:  url(../images/leads-background.jpg);
+ 	background-repeat:  no-repeat;
+ 	background-position: center top;
+ 	background-size: 1920px 600px;
+ 	min-height:  600px;
+ }
+
+ section.campaign h3,
+ section.instegram h3,
+  section.leads h3 {
+  	display: block;
+  	
+  } 
+
+
+
+
