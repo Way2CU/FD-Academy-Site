@@ -10,6 +10,7 @@
 
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
 			<div class="menu">
+				
 				<img 
 					src="_BASEURL.'/site/images/logo-update-upgrade.svg'"  
 					alt="logo-update-upgrade"
@@ -35,7 +36,18 @@
 			</div>
 
 			<header>
-				
+
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="header_article"
+					template="parts/article.xml"
+					/>
+
+				<a href="javascript:void(0)">
+					<cms:text constant="sign_now"/>
+				</a>
+
 			</header>
 			
 		</body>
