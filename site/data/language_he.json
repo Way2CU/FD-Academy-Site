@@ -1,3 +1,9 @@
 {
-    "site_title": "FD Academy"
+    "site_title": "FD Academy",
+    "menu_entry": "כניסה",
+    "menu_lectures": "ההרצאות",
+    "menu_lecturers": "המרצים",
+    "menu_program": "תוכניה",
+    "menu_price": "מחיר",
+    "menu_map": "הגעה"
 }
