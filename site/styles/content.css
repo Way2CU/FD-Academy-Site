@@ -74,7 +74,7 @@ div.menu img.logo {
 section.about {
  	display: block;
  	text-align: center;
- 	padding:50px calc((100vw - 1200px) / 2);
+ 	padding:0px calc((100vw - 1200px) / 2);
  }
 
 section.about p {
@@ -86,9 +86,11 @@ section.about p {
  	font-size:  1.3em;
  }
 
- section.about p strong {
- 	padding-bottom: 10px;
- }
+section.about p:last-of-type {
+	padding-bottom:  0px;
+}
+
+
 
  section.campaign,
  section.instegram,
@@ -106,7 +108,7 @@ section.about p {
  	min-height:  600px;
  }
 
- section.campaign h2 {
+section.campaign h2 {
 	display: inline-block;
 	margin-top:  -20px;
 	padding-top: 10px;
@@ -152,7 +154,7 @@ section.campaign h2:before {
  section.instegram h3,
   section.leads h3 {
   	display: block;
-  	
+
   } 
 
 
