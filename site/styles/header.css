@@ -18,6 +18,12 @@
  	position: relative; 	
  }
 
+header img.logo {
+ 	display: block;
+	margin-right: auto;
+ 	width: 200px;
+ }
+
 header h1 {
 	display: block;
 	padding-top: 190px;
