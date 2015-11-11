@@ -14,26 +14,25 @@
  	background-repeat:  no-repeat;
  	background-position: center top;
  	background-size:  1920px 800px;
- 	min-height:  700px;
+ 	min-height:  680px;
  	position: relative; 	
  }
 
 header h1 {
 	display: block;
-	padding-top: 240px;
+	padding-top: 190px;
 	background-image:  url(../images/logo-update-upgrade.svg);
 	background-repeat:  no-repeat;
 	background-position:  right top;
-	background-size: 427px 211px;
-	font-size: 2.5em;
+	background-size: 350px 170px;
 	color: white;
 	font-weight:  400;
-	width: 450px;
+	width: 350px;
 }
 
 header strong {
 	display: block;
-	margin-bottom:  30px;
+	margin-bottom:  20px;
 	color: white;
 	font-size:  2em;
 }
@@ -48,12 +47,11 @@ header a  {
 	background-color: #2DBDB6;
 	text-decoration: none;
 	font-weight: bold;
-	font-size: 2em;
+	font-size: 1.7em;
 	color: white;
 	overflow: hidden;
 	position: relative;
 	z-index: 0;
-	transition: all 0.3s;
 }
 
 header a:hover:before {
