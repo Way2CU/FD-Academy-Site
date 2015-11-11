@@ -9,6 +9,34 @@
 		</head>
 
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
+			<div class="menu">
+				<img 
+					src="_BASEURL.'/site/images/logo-update-upgrade.svg'"  
+					alt="logo-update-upgrade"
+					class="logo_event"
+					cms:eval="src"
+					/>
+
+				<nav>
+					<a href="#"><cms:text constant="menu_entry"/></a>
+					<a href="#"><cms:text constant="menu_lectures"/></a>
+					<a href="#"><cms:text constant="menu_lecturers"/></a>
+					<a href="#"><cms:text constant="menu_program"/></a>
+					<a href="#"><cms:text constant="menu_price"/></a>
+					<a href="#"><cms:text constant="menu_map"/></a>		
+				</nav>
+
+				<img 
+					src="_BASEURL.'/site/images/logo-fialkov-digital.svg'"  
+					alt="logo-fialkov-digital"
+					class="logo"
+					cms:eval="src"
+					/>
+			</div>
+
+			<header>
+				
+			</header>
 			
 		</body>
 	</html>
