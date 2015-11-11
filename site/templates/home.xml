@@ -59,40 +59,10 @@
 					template="parts/article.xml"
 					/>	
 
-			</section>
-
-			<section class="campaign">
-				<h2><cms:text constant="campaign"/></h2>
-				<cms:module
-					name="articles"
-					action="show"
-					text_id="carousale"
-					template="parts/article.xml"
-					/>
-
-			</section>
-
-			<section class="instegram">
 				
-				<cms:module
-					name="articles"
-					action="show"
-					text_id="instegram"
-					template="parts/article.xml"
-					/>
-					
 			</section>
 
-			<section class="leads">
-				
-				<cms:module
-					name="articles"
-					action="show"
-					text_id="leads"
-					template="parts/article.xml"
-					/>
-					
-			</section>
+			
 			
 		</body>
 	</html>
