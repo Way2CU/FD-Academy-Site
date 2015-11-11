@@ -37,6 +37,13 @@
 
 			<header>
 
+				<img 
+					src="_BASEURL.'/site/images/logo-fialkov-digital.svg'"  
+					alt="logo-fialkov-digital"
+					class="logo"
+					cms:eval="src"
+					/>
+					
 				<cms:module
 					name="articles"
 					action="show"
