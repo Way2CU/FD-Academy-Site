@@ -9,12 +9,12 @@
  header {
  	display: block;
  	padding:0px calc((100vw - 1200px) / 2);
- 	padding-top:  120px;
+ 	padding-top:  20px;
  	background-image:  url(../images/header-background-01.jpg);
  	background-repeat:  no-repeat;
  	background-position: center top;
  	background-size:  1920px 800px;
- 	min-height:  680px;
+ 	min-height:  780px;
  	position: relative; 	
  }
 
