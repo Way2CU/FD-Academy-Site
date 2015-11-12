@@ -199,6 +199,11 @@
 				/>
 
 			<footer>
+
+				<div class="copyright" >
+					<span><cms:text constant="copyright"/></span>
+				</div>
+					
 				<img 
 					src="_BASEURL.'/site/images/logo-fialkov-digital.svg'"  
 					alt="logo-fialkov-digital"
@@ -206,9 +211,6 @@
 					cms:eval="src"
 					/>
 					
-				<div class="copyright" >
-					<span><cms:text constant="copyright"/></span>
-				</div>	
 			</footer>			
 
 				
