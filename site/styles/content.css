@@ -10,6 +10,97 @@
  	display: block;
  }
 
+ a.sign_now {
+ 	display: inline-block;
+ 	vertical-align: top;
+ 	padding-top: 15px;
+ 	padding-bottom: 15px;
+ 	padding-left: 30px;
+ 	padding-right: 30px;
+ 	background-color: #2DBDB6;
+ 	text-decoration: none;
+ 	font-weight: bold;
+ 	font-size: 1.7em;
+ 	color: white;
+ 	overflow: hidden;
+ 	position: relative;
+ 	z-index: 0;
+ }
+
+a.sign_now:hover:before {
+	top: 0%;
+}
+
+ a.sign_now:hover:after {
+	bottom: 0%;
+}
+
+ a.sign_now:before {
+	content: "";
+	position: absolute;
+	top: -100%;
+	left: 0px;
+	width: 100%;
+	height: 50%;
+	background-color: #34495E;
+	z-index: -1;
+	transition: all 0.3s;
+ }
+
+ a.sign_now:after {
+	content: "";
+	position: absolute;
+	bottom: -100%;
+	left: 0px;
+	width: 100%;
+	height: 50%;
+	background-color: #34495E;
+	transition: all 0.3s;
+	z-index: -1;
+ }
+
+a.fixed {
+	display: inline-block;
+	vertical-align: top;
+
+	position: fixed;
+	top: 400px;
+	right: -68px;
+	z-index: 10000;
+
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 30px;
+	padding-right: 60px;
+	background-color: #34495E;
+	text-decoration: none;
+	font-weight: 400;
+	font-size: 1em;
+	color: white;
+	overflow: hidden;
+ 	
+	-webkit-transform: rotate(270deg);
+	-moz-transform: rotate(270deg);
+	 -ms-transform: rotate(270deg);
+            -o-transform: rotate(270deg);
+            transform: rotate(270deg);
+ }
+
+ a.fixed:before {
+	 content: "";
+	position: absolute;
+	top: 12%;
+	margin-left: -20px;
+	right: 0px;
+	background-image: url(../images/icons-sprite.svg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 240px 40px;
+	width: 40px;
+	height: 40px;
+	z-index: 10000020;
+ }
+
 div.menu {
  	display: block;
  	text-align: center;
@@ -531,55 +622,6 @@ section.price article.price p {
 
 section.price article.price p:last-of-type {
 	font-size: 1em;
-}
-
-section.price  a.buy {
-	display: inline-block;
-	vertical-align: top;
-	padding-top: 25px;
-	padding-bottom: 25px;
-	padding-left: 40px;
-	padding-right: 40px;
-	background-color: #2DBDB6;
-	text-decoration: none;
-	font-weight: bold;
-	font-size: 1.7em;
-	color: white;
-	overflow: hidden;
-	position: relative;
-	z-index: 0;
-}
-
-section.price  a.buy:hover:before {
-	top: 0%;
-}
-
-section.price a.buy:hover:after {
-	bottom: 0%;
-}
-
-section.price a.buy:before {
-	content: "";
-	position: absolute;
-	top: -100%;
-	left: 0px;
-	width: 100%;
-	height: 50%;
-	background-color: #34495E;
-	z-index:  -1;
-	transition: all 0.3s;
-}
-
-section.price  a.buy:after {
-	content: "";
-	position: absolute;
-	bottom: -100%;
-	left: 0px;
-	width: 100%;
-	height: 50%;
-	background-color: #34495E;
-	transition: all 0.3s;
-	z-index:  -1;
 }
 
 section.price article.who_is_it_for {
