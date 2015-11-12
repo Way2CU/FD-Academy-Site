@@ -1,0 +1,11 @@
+<document>
+
+	<h2><cms:var param="name" multilanguage="yes"/></h2>
+	<cms:module
+		name="gallery"
+		action="show_image_list"
+		group="lecturers"
+		template="parts/lectureres.xml"
+		/>
+
+</document>
