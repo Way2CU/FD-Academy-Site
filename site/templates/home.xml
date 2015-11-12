@@ -141,6 +141,38 @@
 				cms:eval="src"	
 				/>
 
+			<section class="price">
+
+				<h2><cms:text constant="price_label"/></h2>
+
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="price"
+					template="parts/article_price.xml"
+					/>
+
+				<a href="#" class="buy">
+					<cms:text constant="buy_now_label"/>
+				</a>	
+
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="who_is_it_for"
+					template="parts/article_price.xml"
+					/>
+
+				<cms:module
+					name="gallery"
+					action="show_group"
+					text_id="company"
+					template="parts/gallery_group_company.xml"
+					cms:eval="text_id"
+					/>	
+				
+			</section>	
+
 			
 			
 		</body>
