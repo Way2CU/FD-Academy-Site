@@ -171,7 +171,32 @@
 					cms:eval="text_id"
 					/>	
 				
+			</section>
+
+			<img 
+				src="_BASEURL.'/site/images/top-corner-blue.svg'" 
+				alt=""
+				class="seperator"
+				cms:eval="src"	
+				/>
+
+			<section class="map">
+
+				<cms:module
+					name="articles"
+					action="show_group"
+					text_id="map"
+					template="parts/group_article.xml"
+				/>
+
 			</section>	
+
+			<img 
+				src="_BASEURL.'/site/images/bottom-corner-blue.svg'" 
+				alt=""
+				class="seperator"
+				cms:eval="src"	
+				/>		
 
 			
 			
