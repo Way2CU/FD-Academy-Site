@@ -1,0 +1,18 @@
+<document>
+	<div class="person">
+
+		<figure>
+			<img 
+				src="$params['image']" 
+				alt="$params['title'][$language]"
+				cms:eval="src,alt"
+				/>
+		
+		</figure>
+
+		<p><cms:var param="title" multilanguage="yes"/></p>
+		<p><cms:var param="description" multilanguage="yes"/></p>
+
+	</div>
+
+</document>
