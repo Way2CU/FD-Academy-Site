@@ -1,0 +1,18 @@
+<document>
+	<p><cms:var param="description" multilanguage="yes"/></p>
+
+	<a href="javascript:void(0)" class="next"></a>
+	
+	<div class="slider">
+		
+		<cms:module
+			name="gallery"
+			action="show_image_list"
+			group="company"
+			template="parts/image.xml"
+			/>
+
+	</div>
+
+	<a href="javascript:void(0)" class="previous"></a>
+</document>
