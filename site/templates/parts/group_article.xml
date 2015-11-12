@@ -1,0 +1,15 @@
+<document>
+
+	<h2><cms:var param="title" multilanguage="yes"/></h2>
+
+	<cms:module
+		name="articles"
+		action="show_list"
+		group="$params['id']"
+		order_by="text_id"
+		order_asc="1"
+		template="parts/article_program.xml"
+		cms:eval="group,order_by,order_asc"
+		/>
+
+</document>
