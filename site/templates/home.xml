@@ -10,6 +10,15 @@
 		</head>
 
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
+
+			<a 
+				href="Language::getText('pay_pal_link')"
+				cms:eval="href"
+				class="fixed"
+				>
+				<cms:text constant="sign_now2"/>
+			</a>
+
 			<div class="menu">
 				
 				<img 
@@ -52,7 +61,11 @@
 					template="parts/article.xml"
 					/>
 
-				<a href="javascript:void(0)">
+				<a 
+					href="Language::getText('pay_pal_link')"
+					cms:eval="href"
+					class="sign_now"
+					>
 					<cms:text constant="sign_now"/>
 				</a>
 
@@ -153,7 +166,11 @@
 					template="parts/article_price.xml"
 					/>
 
-				<a href="#" class="buy">
+				<a 
+					href="Language::getText('pay_pal_link')"
+					cms:eval="href"
+					class="sign_now"
+					>
 					<cms:text constant="buy_now_label"/>
 				</a>	
 
