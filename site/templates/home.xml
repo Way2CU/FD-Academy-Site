@@ -187,7 +187,11 @@
 					text_id="company"
 					template="parts/gallery_group_company.xml"
 					cms:eval="text_id"
-					/>	
+					/>
+
+				<a href="javascript:void(0)" class="sign_now">
+					<cms:text constant="sponsership"/>
+				</a>	
 				
 			</section>
 
