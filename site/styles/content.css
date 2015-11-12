@@ -14,12 +14,17 @@ div.menu {
  	display: block;
  	text-align: center;
  	position: fixed;
- 	top: 0px;
+ 	top: -100%;
  	left: 0px;
  	width: 100%;
  	background-color: #34495E;
  	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.7);
  	z-index:  10000;
+ 	transition: all 0.7s;
+ }
+
+ div.menu.active {
+ 	top: 0%;
  }
 
 div.menu img.logo_event {
@@ -609,7 +614,15 @@ section.price div.slider {
 section.price div.slider img {
 	position: absolute;
 	top: 50%;
+	right: 100%;
 	margin-top: -75px;
+	width: 150px;
+	
+	transition: all 0.3s;
+}
+
+section.price div.slider img.transit {
+	transition: none;
 }
 
 section.price a.next {
