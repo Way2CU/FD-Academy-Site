@@ -6,6 +6,10 @@
  * Authors:Tal Reznic
  */
 
+ img.seperator {
+ 	display: block;
+ }
+
 div.menu {
  	display: block;
  	text-align: center;
@@ -75,6 +79,8 @@ section.about {
  	display: block;
  	text-align: center;
  	padding:0px calc((100vw - 1200px) / 2);
+ 	padding-top:  50px;
+ 	padding-bottom:  80px;
  }
 
 section.about p {
@@ -91,26 +97,15 @@ section.about p:last-of-type {
 }
 
 
-
- section.campaign,
- section.instegram,
- section.leads {
- 	display: block;
- 	text-align: center;
- 	padding:0px calc((100vw - 1200px) / 2);
+ section.lectures {
+	display: block;
+	text-align:  center;
  }
 
- section.campaign {
- 	background-image:  url(../images/carousel-background.jpg);
- 	background-repeat:  no-repeat;
- 	background-position: center top;
- 	background-size: 1920px 600px;
- 	min-height:  600px;
- }
-
-section.campaign h2 {
-	display: inline-block;
-	margin-top:  -20px;
+section.lectures h2 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-left: 20px;
@@ -120,42 +115,344 @@ section.campaign h2 {
 	color: #2DBDB6;
 	border: 1px solid #2DBDB6;
 	position: relative;
+	width: 130px;
  }
 
-section.campaign h2:before {
+section.lectures h2:before {
 	content: "";
 	position: absolute;
 	top: 50%;
 	margin-top:  -51px;
 	left: 50%;
-	margin-left:  -91px;
-	width: 180px;
+	margin-left:  -101px;
+	width: 200px;
 	height: 100px;
 	border: 1px solid #2DBDB6;
+}
+
+section.lectures article {
+	display: block;
+	text-align:  right;
+	padding:200px calc((100vw - 1000px) / 2);
+}
+
+section.lectures article:first-of-type {
+	background-image:  url(../images/carousel-background.jpg);
+	background-repeat:  no-repeat;
+	background-position: center top;
+	background-size:  1920px 600px;
+	min-height:  200px;
+	color: white;
+}
+
+section.lectures article:nth-of-type(2) {
+	background-image:  url(../images/instagram-background.jpg);
+	background-repeat:  no-repeat;
+	background-position: center top;
+	background-size:  1920px 600px;
+	min-height:  200px;	
+}
+
+section.lectures article:last-of-type {
+	background-image:  url(../images/leads-background.jpg);
+	background-repeat:  no-repeat;
+	background-position: center top;
+	background-size:  1920px 600px;
+	min-height:  200px;
 } 
 
- section.instegram {
- 	background-image:  url(../images/instagram-background.jpg);
- 	background-repeat:  no-repeat;
- 	background-position: center top;
- 	background-size: 1920px 600px;
- 	min-height:  600px;
+section.lectures article h3 {
+	text-align:  center;
+	width: 400px;
+	font-size: 3em;
+}
+
+section.lectures article p {
+	text-align: center;
+	width: 400px;
+	font-size: 1.3em;
+	font-weight:  700;
+}
+
+section.lectures article:nth-of-type(2) h3,
+section.lectures article:nth-of-type(2) p {
+	margin-right: auto;
+}
+
+
+section.martzim {
+	display: block;
+	text-align: center;
+	padding:0px calc((100vw - 1200px) / 2);
+	
+}
+
+
+section.martzim > h2 {
+	display: block;
+	margin-top:  70px;
+	margin-bottom:  50px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-weight: 400;
+	line-height: 1.75em;
+	color: #2DBDB6;
+	border: 1px solid #2DBDB6;
+	position: relative;
+	width: 130px;
  }
 
- section.leads {
- 	background-image:  url(../images/leads-background.jpg);
- 	background-repeat:  no-repeat;
- 	background-position: center top;
- 	background-size: 1920px 600px;
- 	min-height:  600px;
+section.martzim > h2:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	margin-top:  -51px;
+	left: 50%;
+	margin-left:  -101px;
+	width: 200px;
+	height: 100px;
+	border: 1px solid #2DBDB6;
+}
+
+section.martzim div.person {
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 40px;
+	width: 500px;
+}
+
+section.martzim figure {
+	display: block;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+}
+
+section.martzim figure:hover:before {
+	-webkit-transform: rotate(360deg);
+	   -moz-transform: rotate(360deg);
+	    -ms-transform: rotate(360deg);
+	     -o-transform: rotate(360deg);
+	        transform: rotate(360deg);
+}
+
+section.martzim figure:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	margin-top: -170px;
+	left: 50%;
+	margin-left: -170px;
+	background-image: url(../images/rounded_bg.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 340px 340px;
+	border-radius: 50%;
+	width: 340px;
+	height: 340px;
+	z-index: -1;
+	transition: all 0.8s;
+}
+
+section.martzim figure img {
+	border-radius: 50%;
+}
+
+section.martzim p:first-of-type {
+	display: block;
+	padding-top: 40px;
+	padding-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1.3em;
+	color: #2DBDB6;
+	width: 80%;
+}
+
+section.martzim p {
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+
+section.program {
+	display: block;
+	text-align: center;
+	padding:0px calc((100vw - 1200px) / 2);
+	background-color: #F2F2F2;
+	position: relative;
+}
+
+section.program:before {
+	content: "";
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	margin-left: -1.5px;
+	width: 3px;
+	height: 90%;
+	background-color: #2DBDB6;
+
+}
+
+section.program > h2 {
+	display: block;
+	margin-bottom:  50px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-weight: 400;
+	line-height: 1.75em;
+	color: black;
+	border: 1px solid #2DBDB6;
+	position: relative;
+	width: 130px;
  }
 
- section.campaign h3,
- section.instegram h3,
-  section.leads h3 {
-  	display: block;
+section.program > h2:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	margin-top:  -51px;
+	left: 50%;
+	margin-left:  -101px;
+	width: 200px;
+	height: 100px;
+	border: 1px solid #2DBDB6;
+}
 
-  } 
+section.program article {
+	display: block;
+	position: relative;
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	background-color: white;
+	-webkit-filter: drop-shadow(0px 0px 2px rgba(31,127,120,0.4));
+	width: 450px;
+}
+
+section.program article:nth-child(even):after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	margin-top: -15px;
+	right: calc(100% + 48px);
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	border: 2px solid #2DBDB6;
+	background-color: white;
+}
+
+section.program article:nth-child(odd):after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	margin-top: -15px;
+	left: calc(100% + 48px);
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	border: 2px solid #2DBDB6;
+	background-color: white;
+}
+
+section.program article:nth-child(even):before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 95.7%;
+	margin-top: -20px;
+	width: 40px;
+	height: 40px;
+	border-top: none;
+	border-right: none;
+	background-color: white;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	z-index: 0;
+}
+
+section.program article:nth-child(odd):before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 95.7%;
+	margin-top: -20px;
+	width: 40px;
+	height: 40px;
+	border-bottom: none;
+	border-left: none;
+	background-color: white;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	z-index: 0;
+}
+
+section.program article:nth-child(even) {
+	left: 300px;
+}
+
+section.program article:nth-child(odd) {
+	right: 300px;
+}
+
+section.program article:last-of-type {
+	margin-bottom: 0px;
+}
+
+section.program article h3 {
+	display: block;
+	direction: ltr;
+	text-align: left;
+	padding: 10px;
+	padding-left:  55px;
+	color: white;
+	background-color: #2DBDB6;
+	position: relative;
+}
+
+section.program article h3:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	margin-top: -25px;
+	left: 5px;
+	background-image: url(../images/icons-sprite.svg);
+	background-repeat: no-repeat;
+	background-position: -50px 0px ;
+	background-size: 300px 50px;
+	width: 50px;
+	height: 50px;
+}
+
+section.program article p {
+	display: block;
+	text-align: right;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 1.3em;
+}
+
+
+
+
 
 
 
