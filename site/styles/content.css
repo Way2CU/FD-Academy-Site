@@ -584,7 +584,13 @@ section.price > h2:before {
 }
 
 section.price > p {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 700px;
+	padding-bottom: 5px;
 	font-size: 1.7em;
+	border-bottom: 2px solid #2DBDB6;
 }
 
 section.price article {
