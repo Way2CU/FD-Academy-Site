@@ -29,12 +29,12 @@
 					/>
 
 				<nav>
-					<a href="#"><cms:text constant="menu_entry"/></a>
-					<a href="#"><cms:text constant="menu_lectures"/></a>
-					<a href="#"><cms:text constant="menu_lecturers"/></a>
-					<a href="#"><cms:text constant="menu_program"/></a>
-					<a href="#"><cms:text constant="menu_price"/></a>
-					<a href="#"><cms:text constant="menu_map"/></a>		
+					<a href="#header"><cms:text constant="menu_entry"/></a>
+					<a href="#lectures"><cms:text constant="menu_lectures"/></a>
+					<a href="#lecturers"><cms:text constant="menu_lecturers"/></a>
+					<a href="#program"><cms:text constant="menu_program"/></a>
+					<a href="#price"><cms:text constant="menu_price"/></a>
+					<a href="#map"><cms:text constant="menu_map"/></a>		
 				</nav>
 
 				<img 
@@ -45,7 +45,7 @@
 					/>
 			</div>
 
-			<header>
+			<header id="header">
 
 				<img 
 					src="_BASEURL.'/site/images/logo-fialkov-digital.svg'"  
@@ -83,7 +83,7 @@
 				
 			</section>
 
-			<section class="lectures">
+			<section class="lectures" id="lectures">
 
 				<h2><cms:text constant="campaign"/></h2>
 				
@@ -119,7 +119,7 @@
 
 			</section>
 
-			<section class="martzim">
+			<section class="martzim" id="lecturers">
 
 				<cms:module
 					name="gallery"
@@ -137,7 +137,7 @@
 				cms:eval="src"	
 				/>
 
-			<section class="program">
+			<section class="program" id="program">
 				
 				<cms:module
 					name="articles"
@@ -155,7 +155,7 @@
 				cms:eval="src"	
 				/>
 
-			<section class="price">
+			<section class="price" id="price">
 
 				<h2><cms:text constant="price_label"/></h2>
 
@@ -202,7 +202,7 @@
 				cms:eval="src"	
 				/>
 
-			<section class="map">
+			<section class="map" id="map">
 
 				<cms:module
 					name="articles"
