@@ -69,6 +69,78 @@
 				
 			</section>
 
+			<section class="lectures">
+
+				<h2><cms:text constant="campaign"/></h2>
+				
+				<article>
+
+					<cms:module
+						name="articles"
+						action="show"
+						text_id="carousale"
+						template="parts/article.xml"
+						/>
+				</article>
+
+				<article>
+
+					<cms:module
+						name="articles"
+						action="show"
+						text_id="instagram"
+						template="parts/article.xml"
+						/>
+				</article>
+
+				<article>
+
+					<cms:module
+						name="articles"
+						action="show"
+						text_id="leads"
+						template="parts/article.xml"
+						/>
+				</article>
+
+			</section>
+
+			<section class="martzim">
+
+				<cms:module
+					name="gallery"
+					action="show_group"
+					group="lecturers"
+					template="parts/gallery_group.xml"
+					cms:eval="group"
+					/>
+			</section>
+
+			<img 
+				src="_BASEURL.'/site/images/top-corner.svg'" 
+				alt=""
+				class="seperator"
+				cms:eval="src"	
+				/>
+
+			<section class="program">
+				
+				<cms:module
+					name="articles"
+					action="show_group"
+					text_id="program"
+					template="parts/group_article.xml"
+				/>
+
+			</section>
+
+			<img 
+				src="_BASEURL.'/site/images/bottom-corner.svg'" 
+				alt=""
+				class="seperator"
+				cms:eval="src"	
+				/>
+
 			
 			
 		</body>
