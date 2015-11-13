@@ -6,6 +6,19 @@
  * Authors:Tal Reznic
  */
 
+ div.form_wrap {
+ 	position: fixed;
+ 	text-align: center;
+ 	padding-top: 50px;
+ 	top: 0px;
+ 	left: -100%;
+ 	width: 40%;
+ 	height: 100%;
+ 	z-index: 1000000;
+ 	background-color: #2DBDB6;
+ 	transition: all 0.3s;
+ }
+
  img.seperator {
  	display: block;
  }
