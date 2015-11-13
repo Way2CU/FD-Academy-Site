@@ -319,6 +319,7 @@ section.martzim div.person {
 	vertical-align: top;
 	margin-bottom: 40px;
 	width: 500px;
+	position:  relative;
 }
 
 section.martzim figure {
@@ -329,7 +330,7 @@ section.martzim figure {
 	position: relative;
 }
 
-section.martzim figure:hover:before {
+section.martzim div.person:hover figure:before {
 	-webkit-transform: rotate(360deg);
 	   -moz-transform: rotate(360deg);
 	    -ms-transform: rotate(360deg);
@@ -357,6 +358,26 @@ section.martzim figure:before {
 
 section.martzim figure img {
 	border-radius: 50%;
+}
+
+section.martzim div.social {
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	margin-left: -150px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	border-radius: 50%;
+	width: 300px;
+	height: 300px;
+	z-index: 0;
+	opacity: 0;
+	transition: all 0.8s;
+}
+
+section.martzim div.social:hover {
+	opacity: 1;
 }
 
 section.martzim p:first-of-type {
