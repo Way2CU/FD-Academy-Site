@@ -1,6 +1,6 @@
 <document>
 
-	<a href="$params['url']" cms:eval="href">
+	<a href="$params['url']" class="$params['description']" cms:eval="href,class">
 		
 	</a>
 
