@@ -91,7 +91,7 @@ a.fixed {
 	position: absolute;
 	top: 12%;
 	margin-left: -20px;
-	right: 0px;
+	right: 15px;
 	background-image: url(../images/icons-sprite.svg);
 	background-repeat: no-repeat;
 	background-position: 0px 0px;
