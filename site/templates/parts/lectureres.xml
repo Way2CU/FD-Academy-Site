@@ -1,7 +1,7 @@
 <document>
 	<div class="person">
 
-		<figure>
+		<figure class="$params['text_id']" cms:eval="class">
 			<img 
 				src="$params['image']" 
 				alt="$params['title'][$language]"
@@ -9,6 +9,18 @@
 				/>
 		
 		</figure>
+
+		<!-- social links -->
+		<div class="social">
+
+			<cms:module
+				name="links"
+				action="show_link_list"
+				group="$params['text_id']"
+				template="parts/social_links.xml"
+				cms:eval="group"
+				/>
+		</div>
 
 		<p><cms:var param="title" multilanguage="yes"/></p>
 		<p><cms:var param="description" multilanguage="yes"/></p>
