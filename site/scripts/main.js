@@ -126,8 +126,11 @@ Site.on_load = function() {
 	   });
 
 	var btn = $('a#open');
+	var btn_payment = $('a.pay');
+	var payment_option_dialog = $('div.payment_dialog');
 	var form = $('div.form_wrap');
 	var btn_close = $('a.close');
+	var btn_close_payment = $('a.close_payment');
 	// function for opening sponsers form
 	btn.on('click',function() {
 		form.addClass('open');
@@ -137,6 +140,17 @@ Site.on_load = function() {
 	btn_close.on('click',function() {
 		form.removeClass('open');
 	});
+
+	//  function for opening payment options
+	btn_payment.on('click', function() {
+		payment_option_dialog.addClass('open');
+	})
+
+	//  function for closing payment options dialog
+
+	btn_close_payment.on('click',function() {
+		payment_option_dialog.removeClass('open');
+	})
 };	
 
 
