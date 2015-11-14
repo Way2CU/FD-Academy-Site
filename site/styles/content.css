@@ -6,18 +6,98 @@
  * Authors:Tal Reznic
  */
 
- div.form_wrap {
- 	position: fixed;
- 	text-align: center;
- 	padding-top: 50px;
- 	top: 0px;
- 	left: -100%;
- 	width: 40%;
- 	height: 100%;
- 	z-index: 1000000;
- 	background-color: #2DBDB6;
- 	transition: all 0.3s;
+div.form_wrap {
+	position: fixed;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	top: 50%;
+	margin-top: -208px;
+	left: 50%;
+	margin-left: -250px;
+	width: 500px;
+	z-index: 1000000;
+	background-color: #34495E;
+	transition: all 0.3s;
+	box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.7);
  }
+
+div.form_wrap h2 {
+	color: white;
+	padding-bottom: 10px;
+} 
+
+div.form_wrap form {
+	display: block;
+	width: 100%;
+}
+
+div.form_wrap form label {
+	display: block;
+	padding-bottom: 15px;
+}
+
+div.form_wrap form label span {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+	width: 80px;
+	font-size: 1.2em;
+}
+
+div.form_wrap form label:last-of-type span {
+	vertical-align: top;
+}
+
+div.form_wrap form label input {
+	width: 400px;
+	text-align: right;
+	padding: 18px;
+	border: 1px solid #989898;
+	background-color: #e8e8e8;
+	transition: all 0.3s;
+}
+
+div.form_wrap form label textarea {
+	width: 400px;
+	text-align: left;
+	padding: 10px;
+	border: 1px solid #989898;
+	background-color: #e8e8e8;
+	transition: all 0.3s;
+}
+
+div.form_wrap form label input:focus,div.form_wrap form label textarea:focus {
+	border:1px solid #2DBDB6;
+}
+
+div.form_wrap form div.controls {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 400px;
+}
+
+div.form_wrap form div.controls button {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0.8em;
+	padding-left: 2.5em;
+	padding-right: 2.5em;
+	border: 1px solid #989898;
+	background-color: #2DBDB6;
+	color: white;
+	font-size: 1.1em;
+	text-decoration: none;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+div.form_wrap form div.controls button:hover {
+	background-color: #6EADBE;
+	border:1px solid #2DBDB6;
+}
 
  img.seperator {
  	display: block;
