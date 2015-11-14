@@ -4,7 +4,7 @@ site:
   # subdomain: test
   make_alias: false
   root: httpdocs
-  username: fd-academy
+  username: academy
   caracal_branch: develop
   ip_address: 198.251.79.73
   # owner: Some Person
