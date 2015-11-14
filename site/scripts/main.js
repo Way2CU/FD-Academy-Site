@@ -124,7 +124,20 @@ Site.on_load = function() {
 
 		return false;
 	   });
-};
+
+	var btn = $('a#open');
+	var form = $('div.form_wrap');
+	var btn_close = $('a.close');
+	// function for opening sponsers form
+	btn.on('click',function() {
+		form.addClass('open');
+	});
+
+	//  function for closing sponsers form 
+	btn_close.on('click',function() {
+		form.removeClass('open');
+	});
+};	
 
 
 // connect document `load` event with handler function
