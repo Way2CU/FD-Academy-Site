@@ -11,6 +11,8 @@
 
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
 
+
+
 			<div class="form_wrap">
 				<h2><cms:text constant="sponsership_form_title"/></h2>
 				<cms:module
@@ -24,7 +26,7 @@
 			<a 
 				href="Language::getText('pay_pal_link')"
 				cms:eval="href"
-				class="fixed"
+				class="sign_now fixed"
 				>
 				<cms:text constant="sign_now2"/>
 			</a>
