@@ -18,6 +18,7 @@
 					action="show"
 					text_id="contact"
 					/>
+				<a href="javascript:void(0)" class="close"></a>	
 			</div>
 
 			<a 
