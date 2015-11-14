@@ -199,7 +199,7 @@
 					cms:eval="text_id"
 					/>
 
-				<a href="javascript:void(0)" class="sign_now">
+				<a href="javascript:void(0)" id="open" class="sign_now">
 					<cms:text constant="sponsership"/>
 				</a>	
 				
