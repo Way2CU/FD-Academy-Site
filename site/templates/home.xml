@@ -10,7 +10,25 @@
 		</head>
 
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
+			
+			<div class="payment_dialog">
+				<h2><cms:text constant="payment_options"/></h2>
+				<a 
+					href="Language::getText('credit_card_link')"
+					cms:eval="href"
+					class="sign_now"
+					>
+					<cms:text constant="credit_label"/>
+				</a>
 
+				<a 
+					href="Language::getText('pay_pal_link')"
+					cms:eval="href"
+					class="sign_now"
+					>
+					<cms:text constant="paypal_label"/>
+				</a>
+			</div>
 
 
 			<div class="form_wrap">
@@ -24,7 +42,7 @@
 			</div>
 
 			<a 
-				href="Language::getText('pay_pal_link')"
+				href="javascript:void(0)"
 				cms:eval="href"
 				class="sign_now fixed"
 				>
@@ -74,7 +92,7 @@
 					/>
 
 				<a 
-					href="Language::getText('pay_pal_link')"
+					href="javascript:void(0)"
 					cms:eval="href"
 					class="sign_now"
 					>
@@ -179,7 +197,7 @@
 					/>
 
 				<a 
-					href="Language::getText('pay_pal_link')"
+					href="javascript:void(0)"
 					cms:eval="href"
 					class="sign_now"
 					>
