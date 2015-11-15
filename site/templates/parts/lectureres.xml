@@ -3,7 +3,7 @@
 
 		<figure class="$params['text_id']" cms:eval="class">
 			<img 
-				src="$params['image']" 
+				src="gallery::getThumbnailById($params['id'], null, 300,Thumbnail::CONSTRAIN_BOTH)"
 				alt="$params['title'][$language]"
 				cms:eval="src,alt"
 				/>
