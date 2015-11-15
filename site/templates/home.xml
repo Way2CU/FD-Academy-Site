@@ -7,6 +7,7 @@
 			<title><cms:text constant="site_title"/></title>
 			<cms:collection include="page_control,animation_chain"/>
 			<cms:module name="head_tag" action="print_tag"/>
+			<cms:raw file="parts/external.txt"/>
 		</head>
 
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
@@ -198,7 +199,7 @@
 			<img 
 				src="_BASEURL.'/site/images/top-corner.svg'" 
 				alt=""
-				class="seperator"
+				class="seperator_top"
 				cms:eval="src"	
 				/>
 
@@ -216,7 +217,7 @@
 			<img 
 				src="_BASEURL.'/site/images/bottom-corner.svg'" 
 				alt=""
-				class="seperator"
+				class="seperator_bottom"
 				cms:eval="src"	
 				/>
 
@@ -263,7 +264,7 @@
 			<img 
 				src="_BASEURL.'/site/images/top-corner-blue.svg'" 
 				alt=""
-				class="seperator"
+				class="seperator_top"
 				cms:eval="src"	
 				/>
 
@@ -281,7 +282,7 @@
 			<img 
 				src="_BASEURL.'/site/images/bottom-corner-blue.svg'" 
 				alt=""
-				class="seperator"
+				class="seperator_bottom"
 				cms:eval="src"	
 				/>
 
