@@ -283,6 +283,13 @@
 				cms:eval="src"	
 				/>
 
+			<img 
+				src="_BASEURL.'/site/images/map screen shot.png'"  
+				alt="map"
+				class="map"
+				cms:eval="src"
+				/>	
+
 			<cms:desktop>
 
 				<footer>
