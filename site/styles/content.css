@@ -163,13 +163,21 @@ div.form_wrap form div.controls button:hover {
  img.seperator_bottom {
  	display: block;
  	margin-top: -1px;
- 	width: 101%
+ 	width: 100%
  }
 
   img.seperator_top {
  	display: block;
- 	width: 101%
+ 	width: 100%;
  }
+
+ img.map {
+ 	width: 100%;
+ 	height: auto;
+	margin-top: -93px;
+	position: relative;
+	z-index: -1;
+}
 
 
  a.sign_now {
@@ -916,6 +924,7 @@ section.price a.previous {
 
 section.map {
 	display: block;
+	margin-top: -1px;
 	text-align: center;
 	color: white;
 	padding:0px calc((100vw - 1200px) / 2);
