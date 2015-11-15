@@ -1029,6 +1029,10 @@ header.thankyou p {
 
 @media all and (max-width: 1024px) and (min-width: 768px) {
 
+header.thankyou {
+	padding-right: 50px;
+}	
+
 header h1 {
 	padding-right: 60px;
 	background-position: 0px top;

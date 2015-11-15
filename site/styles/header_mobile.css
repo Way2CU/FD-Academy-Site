@@ -6,7 +6,7 @@
  * Authors:Tal Reznic
  */
 
-  header {
+ header {
  	display: block;
  	margin-top: 53px;
  	text-align: center;
@@ -17,6 +17,25 @@
  	min-height:  670px;
  	position: relative; 	
  }
+
+ header.thankyou {
+ 	margin-top: 0px;
+ }
+
+ header.thankyou p {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 150px;
+	background-image:  url(../images/logo-update-upgrade.svg);
+	background-repeat:  no-repeat;
+	background-position:  right top;
+	background-size: 280px 140px;
+	color: white;
+	font-size: 2em;
+	font-weight:  400;
+	width: 280px;
+}
 
  header img.logo {
  	display: block;
