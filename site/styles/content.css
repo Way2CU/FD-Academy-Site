@@ -993,6 +993,64 @@ section.map article p {
 }
 
 
+@media all and (max-width: 1024px) and (min-width: 768px) {
+
+header h1 {
+	padding-right: 60px;
+	background-position: 0px top;
+}
+
+header strong {
+	padding-right: 60px;
+}
+
+header a.sign_now {
+	margin-right: 60px;
+}
+
+header img.logo {
+	margin-left: 20px;
+}
+
+div.menu nav {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+section.lectures article {
+	padding: 200px calc((100vw - 800px) / 2);
+}
+
+section.martzim div.person {
+	width: 400px;
+}
+
+section.program article {
+	width: 350px;
+}
+
+section.program article:nth-child(even):before {
+	right: 94%;
+}
+
+section.program article:nth-child(odd):before {
+	left: 94%;
+}
+
+section.price div.slider {
+	width: 700px;
+}
+
+section.map article {
+	width: 260px;
+}
+
+img.seperator {
+	margin-top: -1px;
+}
+
+}
+
 
 
 
