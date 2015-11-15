@@ -267,10 +267,18 @@ nav.mobile_menu.visible {
 	border-bottom: 1px solid #34495E;
 }
 
- img.seperator {
- 	display: block;
- }
+ img.seperator_bottom {
+	display: block;
+	margin-top: -1px;
+	width: 101%;
+}
 
+ img.seperator_top {
+	display: block;
+	margin-top: 2px;
+	width: 101%;
+}
+ 
  section.about {
  	display: block;
  	margin-left: auto;
@@ -783,10 +791,10 @@ section.price a.next {
 	vertical-align: middle;
 	background-image: url(../images/icons-sprite.svg);
 	background-repeat: no-repeat;
-	background-position: -200px 0px;
-	background-size: 600px 100px;
-	width: 100px;
-	height: 100px;
+	background-position: -100px 0px;
+	background-size: 300px 50px;
+	width: 50px;
+	height: 50px;
 	transform: rotate(180deg);
 }
 
@@ -795,14 +803,15 @@ section.price a.previous {
 	vertical-align: middle;
 	background-image: url(../images/icons-sprite.svg);
 	background-repeat: no-repeat;
-	background-position: -200px 0px;
-	background-size: 600px 100px;
-	width: 100px;
-	height: 100px;
+	background-position: -100px 0px;
+	background-size: 300px 50px;
+	width: 50px;
+	height: 50px;
 }
 
 section.map {
 	display: block;
+	margin-top: -1px;
 	padding-top: 50px;
 	padding-bottom: 50px;
 	text-align: center;
