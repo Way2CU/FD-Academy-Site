@@ -93,14 +93,29 @@ function FloatingMenu(menu, trigger_element){
  * Function called when document and images have been completely loaded.
  */
 Site.on_load = function() {
-	if (Site.is_mobile())
+	if (Site.is_mobile()) 
 		Site.mobile_menu = new Caracal.MobileMenu();
+
+	if (!Site.is_mobile()) {
+
+		 Site.client_logo_slider_mobile = new Caracal.Gallery.Slider();
+		 Site.client_logo_slider_mobile
+			.images.set_container('div.slider')
+			.images.set_visible_count(5)
+			.images.set_step_size(1)
+			.images.set_center(true)
+			.images.add('div.slider img')
+			.controls.attach_next(' a.next')
+			.controls.attach_previous(' a.previous');
+		 Site.client_logo_slider_mobile.images.update();
+
+	}
 
 	// create slider for client logo gallery
 	 Site.client_logo_slider_mobile = new Caracal.Gallery.Slider();
 	 Site.client_logo_slider_mobile
 		.images.set_container('div.slider')
-		.images.set_visible_count(5)
+		.images.set_visible_count(1)
 		.images.set_step_size(1)
 		.images.set_center(true)
 		.images.add('div.slider img')
