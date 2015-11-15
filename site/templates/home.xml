@@ -10,13 +10,33 @@
 			<cms:raw file="parts/external.txt"/>
 		</head>
 
-		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
+		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">\
+			<cms:raw file="parts/gtm.txt"/>
+
+			<div class="frame">
+				<iframe 
+					src="" 
+					position="fixed"
+					width="800"
+					height="500"
+					align="middle"
+					frameborder="0">
+				</iframe>
+
+				<a href="javascript:void(0)" class="sign_now">
+					<cms:text constant="close"/>
+				</a>
+				
+			</div>
+
 			
 			<div class="payment_dialog">
 				<h2><cms:text constant="payment_options"/></h2>
 				<a 
-					href="Language::getText('credit_card_link')"
-					cms:eval="href"
+					data-credit="Language::getText('credit_card_link')"
+					href="javascript:void(0)"
+					id="credit"
+					cms:eval="data-credit"
 					class="sign_now"
 					>
 					<cms:text constant="credit_label"/>
@@ -33,6 +53,20 @@
 				<a href="javascript:void(0)" class="close_payment"></a>
 			</div>
 
+			<div class="form_wrap buyer">
+
+				<h2><cms:text constant="buy_ticket_step1"/></h2>
+
+				<cms:module
+					name="contact_form"
+					action="show"
+					text_id="contact_pre_pay"
+					class="pre"
+					/>
+
+				<a href="javascript:void(0)" class="close"></a>
+
+			</div>
 
 			<div class="form_wrap">
 				<h2><cms:text constant="sponsership_form_title"/></h2>
@@ -41,7 +75,8 @@
 					action="show"
 					text_id="contact"
 					/>
-				<a href="javascript:void(0)" class="close"></a>	
+				<a href="javascript:void(0)" class="close"></a>
+
 			</div>
 
 			<cms:desktop>
@@ -267,12 +302,24 @@
 
 			<section class="map" id="map">
 
-				<cms:module
-					name="articles"
-					action="show_group"
-					text_id="map"
-					template="parts/group_article.xml"
-				/>
+				<img 
+					src="_BASEURL.'/site/images/map screen shot.png'"  
+					alt="map"
+					class="map"
+					cms:eval="src"
+					/>
+						
+				<div class="arrival_info">
+
+					<cms:module
+						name="articles"
+						action="show_group"
+						text_id="map"
+						template="parts/group_article.xml"
+					/>	
+
+				</div>
+		
 
 			</section>	
 
@@ -283,12 +330,6 @@
 				cms:eval="src"	
 				/>
 
-			<img 
-				src="_BASEURL.'/site/images/map screen shot.png'"  
-				alt="map"
-				class="map"
-				cms:eval="src"
-				/>	
 
 			<cms:desktop>
 
