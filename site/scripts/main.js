@@ -110,32 +110,29 @@ Site.on_load = function() {
 		Site.mobile_menu = new Caracal.MobileMenu();
 	}
 
-	if (Site.is_mobile()) 
-		 Site.client_logo_slider = new Caracal.Gallery.Slider();
-		 Site.client_logo_slider
-			.images.set_container('div.slider')
-			.images.set_visible_count(1)
-			.images.set_step_size(1)
-			.images.set_center(true)
-			.images.add('div.slider img')
-			.controls.attach_next(' a.next')
-			.controls.attach_previous(' a.previous');
-		 Site.client_logo_slider.images.update();
-
 
 
 
 	// create slider for client logo gallery
-	 Site.client_logo_slider_mobile = new Caracal.Gallery.Slider();
-	 Site.client_logo_slider_mobile
-		.images.set_container('div.slider')
-		.images.set_visible_count(5)
-		.images.set_step_size(1)
-		.images.set_center(true)
-		.images.add('div.slider img')
-		.controls.attach_next(' a.next')
-		.controls.attach_previous(' a.previous');
-	 Site.client_logo_slider_mobile.images.update();
+	Site.client_logo_slider = new Caracal.Gallery.Slider();
+	Site.client_logo_slider
+	        .images.set_container('div.slider')
+	        .images.add('div.slider img')
+	        .controls.attach_next(' a.next')
+	        .controls.attach_previous(' a.previous');
+	Site.client_logo_slider.images.update();
+	 
+	if (Site.is_mobile())  {
+	        Site.client_logo_slider
+	                .images.set_visible_count(1)
+	                .images.set_step_size(1)
+	                .images.set_center(true)
+	} else {
+	        Site.client_logo_slider
+	                .images.set_visible_count(5)
+	                .images.set_step_size(1)
+	                .images.set_center(true)
+	}
 
 	 // create fixed position menu
 	Site.menu = new FloatingMenu($('div.menu'), $('section.about'));
