@@ -1,0 +1,48 @@
+/**
+ * Header Mobile Style Sheet
+ * FD Academy Site
+ *
+ * Copyright (c) 2015. by Way2CU, http://way2cu.com
+ * Authors:Tal Reznic
+ */
+
+  header {
+ 	display: block;
+ 	margin-top: 53px;
+ 	text-align: center;
+ 	background-image:  url(../images/mobile-header-background-01.jpg);
+ 	background-repeat:  no-repeat;
+ 	background-position: center top;
+ 	background-size:  100% auto;
+ 	min-height:  670px;
+ 	position: relative; 	
+ }
+
+ header img.logo {
+ 	display: block;
+ 	padding-top: 20px;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	width: 200px;
+ }
+
+ header h1 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 150px;
+	background-image:  url(../images/logo-update-upgrade.svg);
+	background-repeat:  no-repeat;
+	background-position:  right top;
+	background-size: 280px 140px;
+	color: white;
+	font-weight:  400;
+	width: 280px;
+}
+
+header strong {
+	display: block;
+	margin-bottom:  10px;
+	color: white;
+	font-size:  1.5em;
+}
