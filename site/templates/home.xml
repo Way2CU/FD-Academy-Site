@@ -104,7 +104,7 @@
 					<a href="#program"><cms:text constant="menu_program"/></a>
 					<a href="#price"><cms:text constant="menu_price"/></a>
 					<a href="#map"><cms:text constant="menu_map"/></a>	
-					
+
 				</nav>
 
 
@@ -285,20 +285,43 @@
 				cms:eval="src"	
 				/>
 
-			<footer>
+			<cms:desktop>
 
-				<div class="copyright" >
-					<span><cms:text constant="copyright"/></span>
-				</div>
+				<footer>
+
+					<div class="copyright" >
+						<span><cms:text constant="copyright"/></span>
+					</div>
+						
+					<img 
+						src="_BASEURL.'/site/images/logo-fialkov-digital.svg'"  
+						alt="logo-fialkov-digital"
+						class="logo"
+						cms:eval="src"
+						/>
+						
+				</footer>
+
+			</cms:desktop>	
+
+
+			<cms:mobile>
+
+				<footer>
 					
-				<img 
-					src="_BASEURL.'/site/images/logo-fialkov-digital.svg'"  
-					alt="logo-fialkov-digital"
-					class="logo"
-					cms:eval="src"
-					/>
-					
-			</footer>			
+					<img 
+						src="_BASEURL.'/site/images/logo-fialkov-digital.svg'"  
+						alt="logo-fialkov-digital"
+						class="logo"
+						cms:eval="src"
+						/>
+						
+					<div class="copyright" >
+						<span><cms:text constant="copyright"/></span>
+					</div>
+				</footer>
+
+			</cms:mobile>		
 
 				
 		</body>
