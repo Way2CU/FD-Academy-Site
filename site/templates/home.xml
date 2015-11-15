@@ -108,7 +108,8 @@
 						<a href="#lecturers"><cms:text constant="menu_lecturers"/></a>
 						<a href="#program"><cms:text constant="menu_program"/></a>
 						<a href="#price"><cms:text constant="menu_price"/></a>
-						<a href="#map"><cms:text constant="menu_map"/></a>		
+						<a href="#map"><cms:text constant="menu_map"/></a>
+						<a href="#sponsers_gallery"><cms:text constant="menu_sponsers"/></a>		
 					</nav>
 
 					<img 
@@ -141,7 +142,8 @@
 					<a href="#lecturers"><cms:text constant="menu_lecturers"/></a>
 					<a href="#program"><cms:text constant="menu_program"/></a>
 					<a href="#price"><cms:text constant="menu_price"/></a>
-					<a href="#map"><cms:text constant="menu_map"/></a>	
+					<a href="#map"><cms:text constant="menu_map"/></a>
+					<a href="#sponsers_gallery"><cms:text constant="menu_sponsers"/></a>		
 
 				</nav>
 
@@ -348,7 +350,7 @@
 					/>	
 			</section>
 
-			<section class="sponsers_gallery">
+			<section  id="sponsers_gallery">
 				
 				<cms:module
 					name="gallery"
