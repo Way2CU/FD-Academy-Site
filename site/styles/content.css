@@ -160,9 +160,17 @@ div.form_wrap form div.controls button:hover {
 	border:1px solid #2DBDB6;
 }
 
- img.seperator {
+ img.seperator_bottom {
  	display: block;
+ 	margin-top: -1px;
+ 	width: 101%
  }
+
+  img.seperator_top {
+ 	display: block;
+ 	width: 101%
+ }
+
 
  a.sign_now {
  	display: inline-block;
