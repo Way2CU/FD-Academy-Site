@@ -140,7 +140,6 @@ Site.on_load = function() {
 	})
 
 
-
 	//  function for opening iframe 
 	btn_credit.on('click', function() {
 		var href = $(this).attr('data-credit');
