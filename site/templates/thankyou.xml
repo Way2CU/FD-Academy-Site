@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../units/schema/language.dtd">
+<document>
+	<cms:var name="_DOCTYPE"/>
+	<html lang="$language" cms:eval="lang">
+		<head>
+			<title><cms:text constant="site_title"/></title>
+			<cms:collection include="page_control,animation_chain"/>
+			<cms:module name="head_tag" action="print_tag"/>
+			<cms:raw file="parts/external.txt"/>
+		</head>
+
+		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
+			
+
+			<header id="header" class="$section == 'thankyou' ? 'thankyou' : false" cms:optional="class">
+
+				<img 
+					src="_BASEURL.'/site/images/logo-fialkov-digital.svg'"  
+					alt="logo-fialkov-digital"
+					class="logo"
+					cms:eval="src"
+					/>
+					
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="thankyou_article"
+					template="parts/article.xml"
+					/>
+
+			</header>		
+		</body>
+	</html>
+</document>
