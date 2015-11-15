@@ -346,6 +346,16 @@
 					text_id="about_or"
 					template="parts/article_price.xml"
 					/>	
+			</section>
+
+			<section class="sponsers_gallery">
+				
+				<cms:module
+					name="gallery"
+					action="show_group_list"
+					container="sponsers_gallery"
+					template="parts/sponsers_list.xml"
+					/>
 			</section>	
 
 			
