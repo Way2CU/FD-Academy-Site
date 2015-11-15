@@ -1,0 +1,268 @@
+/**
+ * Main  Mobile Style Sheet
+ * FD Academy Site
+ *
+ * Copyright (c) 2015. by Way2CU, http://way2cu.com
+ * Authors:Tal Reznic
+ */
+h2 {
+	font-size: 1.75em;
+}
+
+ div.payment_dialog {
+	position: fixed;
+	top: 50%;
+	margin-top: -92px;
+	left: 50%;
+	margin-left: -150px;
+	z-index: 100000;
+	text-align: center;
+	background-color: white;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	width: 300px;
+	border: 1px solid #34495E;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.8s;
+	box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.7);
+ }
+
+ div.payment_dialog.open {
+ 	opacity: 1;
+ 	visibility: visible;
+ }
+
+div.payment_dialog h2 {
+	padding-bottom: 10px;
+} 
+
+div.payment_dialog a {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+div.payment_dialog a.close_payment {
+	position: absolute;
+	right:5px;
+	top: 5px;
+	background-image: url(../images/close_button2.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 30px 30px;
+	width: 30px;
+	height: 30px;	
+}
+
+div.form_wrap {
+	position: fixed;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	top: -100%;
+	left: 50%;
+	margin-left: -150px;
+	width: 300px;
+	z-index: 1000000;
+	background-color: #34495E;
+	transition: all 0.8s;
+	box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.7);
+ }
+
+ div.form_wrap.open {
+ 	top: 0%;
+ }
+
+ a.close {
+	position: absolute;
+	right:10px;
+	top: 10px;
+	background-image: url(../images/close_button.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 35px 35px;
+	width: 35px;
+	height: 35px;
+ }
+
+div.form_wrap h2 {
+	color: white;
+	padding-bottom: 10px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+} 
+
+div.form_wrap form {
+	display: block;
+	width: 100%;
+}
+
+div.form_wrap form label {
+	display: block;
+	padding-bottom: 15px;
+}
+
+div.form_wrap form label span {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+	width: 80px;
+	font-size: 1.2em;
+}
+
+div.form_wrap form label:last-of-type span {
+	vertical-align: top;
+}
+
+div.form_wrap form label input {
+	width: 80%;
+	text-align: right;
+	padding: 18px;
+	border: 1px solid #989898;
+	background-color: #e8e8e8;
+	transition: all 0.3s;
+}
+
+div.form_wrap form label textarea {
+	width: 400px;
+	text-align: left;
+	padding: 10px;
+	border: 1px solid #989898;
+	background-color: #e8e8e8;
+	transition: all 0.3s;
+}
+
+div.form_wrap form label input:focus,div.form_wrap form label textarea:focus {
+	border:1px solid #2DBDB6;
+}
+
+div.form_wrap form div.controls {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+
+div.form_wrap form div.controls button {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0.8em;
+	padding-left: 2.5em;
+	padding-right: 2.5em;
+	border: 1px solid #989898;
+	background-color: #2DBDB6;
+	color: white;
+	font-size: 1.1em;
+	text-decoration: none;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+div.form_wrap form div.controls button:hover {
+	background-color: #6EADBE;
+	border:1px solid #2DBDB6;
+}
+
+a.sign_now {
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #2DBDB6;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.5em;
+	color: white;
+	overflow: hidden;
+	position: relative;
+	z-index: 0;
+ }
+
+a.sign_now.fixed {
+	background-image:  url(../images/ticket_white.svg);
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 30px 30px;
+	padding-right: 40px;
+} 
+
+div.mobile_title {
+ 	text-align: center;
+ 	background-color: #2DBDB6;
+}
+
+div.mobile_title a.menu {
+	position: absolute;
+	top: 50%;
+	margin-top: -2px;
+	right: 5px;
+	width: 35px;
+	height: 4px;
+	background-color: white;
+}
+
+div.mobile_title.visible a.menu {
+	background-color: inherit;
+}
+
+div.mobile_title a.menu:before {
+	content: "";
+	position: absolute;
+	top: -10px;
+	right: 0px;
+	width: 35px;
+	height: 4px;
+	background-color:  white;
+	transition: all 0.3s;	
+}
+
+div.mobile_title.visible a.menu:before {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	top: 0;        
+}
+
+div.mobile_title a.menu:after {
+	content: "";
+	position: absolute;
+	top: 10px;
+	right: 0px;
+	width: 35px;
+	height: 4px;
+	background-color: white;
+	transition: all 0.3s;	
+}
+
+div.mobile_title.visible a.menu:after {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	top: 0;        
+}
+
+nav.mobile_menu {
+	background-image:  url(../images/logo-fialkov-digital.svg);
+	background-repeat:  no-repeat;
+	background-position: center 350px;
+	background-size: 215px 50px;
+}
+
+nav.mobile_menu.visible {
+	top: 53px !important;
+	width: 100%;
+	text-align: right;
+}
+
+.mobile_menu a {
+	padding: 1em;
+	border-bottom: 1px solid #34495E;
+}
