@@ -1,0 +1,10 @@
+<document>
+	<h2 class="$params['id']" cms:eval="class"><cms:var param="name" multilanguage="yes"/></h2>
+	<cms:module
+		name="gallery"
+		action="show_image_list"
+		group_id="$params['id']"
+		template="parts/image.xml"
+		cms:eval="group_id"
+		/>
+</document>
