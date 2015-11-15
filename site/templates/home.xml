@@ -43,6 +43,8 @@
 				<a href="javascript:void(0)" class="close"></a>	
 			</div>
 
+			<cms:desktop>
+
 			<a 
 				href="javascript:void(0)"
 				cms:eval="href"
@@ -50,32 +52,63 @@
 				>
 				<cms:text constant="sign_now2"/>
 			</a>
+			
 
-			<div class="menu">
-				
-				<img 
-					src="_BASEURL.'/site/images/logo-update-upgrade.svg'"  
-					alt="logo-update-upgrade"
-					class="logo_event"
-					cms:eval="src"
-					/>
+				<div class="menu">
+					
+					<img 
+						src="_BASEURL.'/site/images/logo-update-upgrade.svg'"  
+						alt="logo-update-upgrade"
+						class="logo_event"
+						cms:eval="src"
+						/>
 
-				<nav>
+					<nav>
+						<a href="#header"><cms:text constant="menu_entry"/></a>
+						<a href="#lectures"><cms:text constant="menu_lectures"/></a>
+						<a href="#lecturers"><cms:text constant="menu_lecturers"/></a>
+						<a href="#program"><cms:text constant="menu_program"/></a>
+						<a href="#price"><cms:text constant="menu_price"/></a>
+						<a href="#map"><cms:text constant="menu_map"/></a>		
+					</nav>
+
+					<img 
+						src="_BASEURL.'/site/images/logo-fialkov-digital.svg'"  
+						alt="logo-fialkov-digital"
+						class="logo"
+						cms:eval="src"
+						/>
+				</div>
+
+			</cms:desktop>
+
+			<cms:mobile>
+				<div class="mobile_title">
+					<a href="javascript:void(0)" class="menu"></a>
+
+					<a 
+						href="javascript:void(0)"
+						cms:eval="href"
+						class="sign_now fixed pay"
+						>
+						<cms:text constant="sign_now2"/>
+					</a>
+
+				</div>
+
+				<nav class="mobile_menu">
+
 					<a href="#header"><cms:text constant="menu_entry"/></a>
 					<a href="#lectures"><cms:text constant="menu_lectures"/></a>
 					<a href="#lecturers"><cms:text constant="menu_lecturers"/></a>
 					<a href="#program"><cms:text constant="menu_program"/></a>
 					<a href="#price"><cms:text constant="menu_price"/></a>
-					<a href="#map"><cms:text constant="menu_map"/></a>		
+					<a href="#map"><cms:text constant="menu_map"/></a>	
+					
 				</nav>
 
-				<img 
-					src="_BASEURL.'/site/images/logo-fialkov-digital.svg'"  
-					alt="logo-fialkov-digital"
-					class="logo"
-					cms:eval="src"
-					/>
-			</div>
+
+			</cms:mobile>
 
 			<header id="header">
 
