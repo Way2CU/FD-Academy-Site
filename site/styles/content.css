@@ -311,8 +311,8 @@ div.menu img.logo_event {
  div.menu nav {
  	display: inline-block;
  	vertical-align: middle;
- 	padding-left: 165px;
- 	padding-right: 165px;
+ 	padding-left: 140px;
+ 	padding-right: 140px;
  }
 
 div.menu nav a {
@@ -1102,14 +1102,14 @@ section.about_or article p {
 	font-size:  1em;
 }
 
-section.sponsers_gallery {
+section#sponsers_gallery {
 	display: block;
 	text-align: center;
 	padding:50px calc((100vw - 1200px) / 2);
 	background-color: #F2F2F2;
 }
 
-section.sponsers_gallery h2 {
+section#sponsers_gallery h2 {
 	display: block;
 	text-align:  center;
 	margin-bottom:  30px;
@@ -1127,7 +1127,7 @@ section.sponsers_gallery h2 {
 	width: 130px;
 }
 
-section.sponsers_gallery h2:before {
+section#sponsers_gallery h2:before {
 	content: "";
 	position: absolute;
 	top: 50%;
@@ -1139,18 +1139,18 @@ section.sponsers_gallery h2:before {
 	border: 1px solid #2DBDB6;
 }
 
-section.sponsers_gallery h2:last-of-type {
+section#sponsers_gallery h2:last-of-type {
 	margin-bottom: 0px;
 }
 
-section.sponsers_gallery img {
+section#sponsers_gallery img {
 	display: inline-block;
 	vertical-align: top;
 	margin-left: 5px;
 	margin-right: 5px;
 }
 
-section.sponsers_gallery img {
+section#sponsers_gallery img {
 	margin-bottom: 30px;
 }
 
