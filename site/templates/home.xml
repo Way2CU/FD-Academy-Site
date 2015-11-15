@@ -331,14 +331,21 @@
 
 			<section class="about_or">
 
+				<h2 ><cms:text constant="story_beyond_label"/></h2>
+
 				<cms:module
 					name="gallery"
-					action="show_group"
-					group="or_about"
-					template="parts/gallery_group.xml"
-					cms:eval="group"
+					action="show_image"
+					text_id="or"
+					template="parts/lectureres.xml"
 					/>
-				
+
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="about_or"
+					template="parts/article_price.xml"
+					/>	
 			</section>	
 
 			
