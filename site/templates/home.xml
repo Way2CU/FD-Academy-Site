@@ -322,6 +322,13 @@
 						
 			</section>
 
+			<img 
+				src="_BASEURL.'/site/images/bottom-corner-blue.svg'" 
+				alt=""
+				class="seperator_bottom"
+				cms:eval="src"	
+				/>
+
 			<section class="about_or">
 
 				<cms:module
@@ -334,12 +341,7 @@
 				
 			</section>	
 
-			<img 
-				src="_BASEURL.'/site/images/bottom-corner-blue.svg'" 
-				alt=""
-				class="seperator_bottom"
-				cms:eval="src"	
-				/>
+			
 
 
 			<cms:desktop>
