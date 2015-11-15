@@ -93,11 +93,24 @@ function FloatingMenu(menu, trigger_element){
  * Function called when document and images have been completely loaded.
  */
 Site.on_load = function() {
-	if (Site.is_mobile()) 
-		Site.mobile_menu = new Caracal.MobileMenu();
+
+	var btn = $('a#open');
+	var btn_payment = $('a.pay');
+	var payment_option_dialog = $('div.payment_dialog');
+	var form = $('div.form_wrap');
+	var form_pre = $('div.form_wrap.buyer')
+	var btn_close = $('a.close');
+	var btn_close_payment = $('a.close_payment');
+	var btn_credit = $('a#credit');
+	var frame = $('div.frame');
+	var frame_src = $('div.frame iframe');
+	var btn_iframe = $('div.frame a');
 
 	if (Site.is_mobile()) {
+		Site.mobile_menu = new Caracal.MobileMenu();
+	}
 
+	if (Site.is_mobile()) 
 		 Site.client_logo_slider = new Caracal.Gallery.Slider();
 		 Site.client_logo_slider
 			.images.set_container('div.slider')
@@ -109,7 +122,8 @@ Site.on_load = function() {
 			.controls.attach_previous(' a.previous');
 		 Site.client_logo_slider.images.update();
 
-	}
+
+
 
 	// create slider for client logo gallery
 	 Site.client_logo_slider_mobile = new Caracal.Gallery.Slider();
@@ -140,15 +154,21 @@ Site.on_load = function() {
 		return false;
 	   });
 
-	var btn = $('a#open');
-	var btn_payment = $('a.pay');
-	var payment_option_dialog = $('div.payment_dialog');
-	var form = $('div.form_wrap');
-	var btn_close = $('a.close');
-	var btn_close_payment = $('a.close_payment');
+	//  function for opening payment dialog after for submission
+
+
+	$('div.form_wrap.buyer form').on('dialog-show', function() {
+		$('form').hide();
+		$('div.send').hide();
+		form_pre.removeClass('open');
+		payment_option_dialog.addClass('open');
+		return false;
+	});
+
 	// function for opening sponsers form
 	btn.on('click',function() {
 		form.addClass('open');
+
 	});
 
 	//  function for closing sponsers form 
@@ -158,13 +178,30 @@ Site.on_load = function() {
 
 	//  function for opening payment options
 	btn_payment.on('click', function() {
-		payment_option_dialog.addClass('open');
+		$('form').show();
+		form_pre.addClass('open');
 	})
 
 	//  function for closing payment options dialog
 
 	btn_close_payment.on('click',function() {
 		payment_option_dialog.removeClass('open');
+	})
+
+
+
+	//  function for opening iframe 
+	btn_credit.on('click', function() {
+		var href = $(this).attr('data-credit');
+		payment_option_dialog.removeClass('open');
+		frame.addClass('open');
+		frame_src.attr('src',href);
+	})
+
+	//  function for closing iframe
+
+	btn_iframe.on('click',function() {
+		frame.removeClass('open');
 	})
 };	
 

@@ -6,6 +6,28 @@
  * Authors:Tal Reznic
  */
 
+div.frame {
+	position: fixed;
+	text-align: center;
+	z-index: 1000000;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	top: -150%;
+	margin-top: -296.5px;
+	left: 50%;
+	margin-left: -401px;
+	display: block;
+	width: 800px;
+	border: 2px solid black;
+	box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.7);
+	background-color: white;
+	transition: all 0.8s;
+}
+
+div.frame.open {
+	top: 50%;
+}
+
 div.payment_dialog {
 	position: fixed;
 	top: 50%;
@@ -170,15 +192,6 @@ div.form_wrap form div.controls button:hover {
  	display: block;
  	width: 100%;
  }
-
- img.map {
- 	width: 100%;
- 	height: auto;
-	margin-top: -93px;
-	position: relative;
-	z-index: -1;
-}
-
 
  a.sign_now {
  	display: inline-block;
@@ -961,21 +974,44 @@ section.map > h2:before {
 	border: 1px solid white;
 }
 
-section.map article {
+section.map  div.image {
 	display: inline-block;
 	vertical-align: top;
-	padding-top: 100px;
-	width: 350px;
+	width: 50%;
+	height: 500px;
+	background-image: url(../images/map-screen-shot.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+section.map div.arrival_info {
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+}
+
+section.map div.arrival_info h2 {
+	text-align: right;
+	padding-right: 20px;
+	margin-bottom: 20px;
+}
+
+section.map article {
+	display: block;
+	margin-bottom: 50px;
+	text-align: right;
+	padding-right: 100px;
 	position: relative;
 }
 
 section.map article:before {
 	content: "";
 	position: absolute;
-	top: 0px;
-	left: 50%;
-	margin-left: -50px;
-	background-image:  url(../images/icons-sprite.svg);
+	top: 50%;
+	margin-top: -50px;
+	right: 0;
+	background-image: url(../images/icons-sprite.svg);
 	background-position: 0px 0px;
 	background-size: 600px 100px;
 	width: 100px;
@@ -1006,7 +1042,6 @@ section.map article p {
 	margin-right: auto;
 	font-size: 1.3em;
 	font-weight: 400;
-	width: 80%
 }
 
 /*Thank you Page*/
