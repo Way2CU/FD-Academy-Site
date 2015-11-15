@@ -306,13 +306,6 @@
 
 			<section class="map" id="map">
 
-				<img 
-					src="_BASEURL.'/site/images/map screen shot.png'"  
-					alt="map"
-					class="map"
-					cms:eval="src"
-					/>
-						
 				<div class="arrival_info">
 
 					<cms:module
@@ -321,10 +314,24 @@
 						text_id="map"
 						template="parts/group_article.xml"
 					/>	
-
 				</div>
-		
 
+				<div class="image">
+					
+				</div>
+						
+			</section>
+
+			<section class="about_or">
+
+				<cms:module
+					name="gallery"
+					action="show_group"
+					group="or_about"
+					template="parts/gallery_group.xml"
+					cms:eval="group"
+					/>
+				
 			</section>	
 
 			<img 
