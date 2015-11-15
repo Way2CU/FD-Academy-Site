@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Leads>
+<row no="1">
+<FL val="Lead Source">%ref%</FL>
+<FL val="Company">Vipcar</FL>
+<FL val="Last Name">%name%</FL>
+<FL val="Email">%email%</FL>
+<FL val="Title">none</FL>
+<FL val="Phone">%phone%</FL>
+<FL val="Home Phone">none</FL>
+<FL val="Other Phone">none</FL>
+<FL val="Fax">none</FL>
+<FL val="Mobile">none</FL>
+</row>
+</Leads>
+
