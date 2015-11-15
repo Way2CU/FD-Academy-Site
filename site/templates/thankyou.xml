@@ -11,7 +11,7 @@
 		</head>
 
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
-			
+			<cms:raw file="parts/gtm.txt"/>
 
 			<header id="header" class="$section == 'thankyou' ? 'thankyou' : false" cms:optional="class">
 
