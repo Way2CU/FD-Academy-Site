@@ -307,8 +307,8 @@ div.menu img.logo_event {
  div.menu nav {
  	display: inline-block;
  	vertical-align: middle;
- 	padding-left: 140px;
- 	padding-right: 140px;
+ 	padding-left: 40px;
+ 	padding-right: 40px;
  }
 
 div.menu nav a {
@@ -342,6 +342,13 @@ div.menu nav a:before {
 	transition: all 0.3s;
 	z-index: 1;
  } 
+
+ div.menu a.sign_now {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 40px;
+	font-size: 1.3em
+ }
 
 div.menu img.logo {
  	display: inline-block;
@@ -500,6 +507,7 @@ div.person {
 	margin-bottom: 40px;
 	width: 500px;
 	position:  relative;
+
 }
 
 div.person figure {
@@ -1179,6 +1187,10 @@ header h1 {
 	background-position: 0px top;
 }
 
+header p {
+	padding-right: 60px;
+}
+
 header strong {
 	padding-right: 60px;
 }
@@ -1250,6 +1262,15 @@ div.frame {
 	-webkit-overflow-scrolling:touch;
 	overflow: auto;
 	height: 600px;
+}
+
+div.menu nav a {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+div.menu a.sign_now {
+	margin-left:  15px;
 }
 
 
