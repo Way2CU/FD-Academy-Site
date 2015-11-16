@@ -16,6 +16,7 @@
 
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">\
 			<cms:raw file="parts/gtm.txt"/>
+
 			<cms:desktop>
 				<div class="frame">
 					<iframe 
@@ -33,6 +34,7 @@
 
 			
 			<div class="payment_dialog">
+				
 				<h2><cms:text constant="payment_options"/></h2>
 				<a 
 					data-credit="Language::getText('credit_card_link')"
