@@ -20,6 +20,7 @@
 			<cms:desktop>
 				<div class="frame">
 					<iframe 
+						frameborder="0"
 						width="800"
 						height="500"
 						>
@@ -34,7 +35,7 @@
 
 			
 			<div class="payment_dialog">
-				
+
 				<h2><cms:text constant="payment_options"/></h2>
 				<a 
 					data-credit="Language::getText('credit_card_link')"
