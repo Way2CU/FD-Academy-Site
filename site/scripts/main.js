@@ -49,6 +49,11 @@ Site.is_mobile = function() {
  * Function called when document and images have been completely loaded.
  */
 Site.on_load = function() {
+	
+	// Break out from Iframe
+	if (top.location!= self.location) {
+	top.location = self.location.href
+	}
 
 	var btn = $('a#open');
 	var btn_payment = $('a.pay');
