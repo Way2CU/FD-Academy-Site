@@ -45,6 +45,7 @@ Site.is_mobile = function() {
 	return result;
 };
 
+
 /**
  * Function called when document and images have been completely loaded.
  */
@@ -111,8 +112,6 @@ Site.on_load = function() {
 	   });
 
 	//  function for opening payment dialog after for submission
-
-
 	$('div.form_wrap.buyer form').on('dialog-show', function() {
 		$('form').hide();
 		$('div.send').hide();
