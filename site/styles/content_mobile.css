@@ -273,14 +273,18 @@ nav.mobile_menu.visible {
 
  img.seperator_bottom {
 	display: block;
+	width: 100%;
+	height: auto;
 	margin-top: -1px;
-	width: 101%;
+	
 }
 
  img.seperator_top {
 	display: block;
-	margin-top: 2px;
-	width: 101%;
+	width: 100%;
+	height: auto;
+	margin-top: -1px;
+	
 }
 
 img.map {
