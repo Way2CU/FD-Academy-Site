@@ -113,6 +113,16 @@
 						<a href="#sponsers_gallery"><cms:text constant="menu_sponsers"/></a>		
 					</nav>
 
+					<a 
+						href="javascript:void(0)"
+						cms:eval="href"
+						class="sign_now pay"
+						>
+						<cms:text constant="sign_now_menu_fixed"/>
+					</a>
+
+
+
 					<img 
 						src="_BASEURL.'/site/images/logo-fialkov-digital.svg'"  
 						alt="logo-fialkov-digital"
@@ -169,6 +179,8 @@
 					>
 					<cms:text constant="sign_now"/>
 				</a>
+
+				<p><cms:text constant="confrence_date"/></p>
 
 			</header>
 
