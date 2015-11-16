@@ -1192,8 +1192,8 @@ header img.logo {
 }
 
 div.menu nav {
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 section.lectures article {
@@ -1212,17 +1212,47 @@ section.program article:nth-child(even):before {
 	right: 94%;
 }
 
+section.program article:nth-child(even):after {
+	right:calc(100% + 98px);
+}
+
 section.program article:nth-child(odd):before {
 	left: 94%;
+}
+
+section.program article:nth-child(odd):after {
+	left:calc(100% + 98px);
 }
 
 section.price div.slider {
 	width: 700px;
 }
 
-section.map article {
-	width: 260px;
+section.map div.arrival_info {
+	width: calc(50% - 50px);
 }
+
+section.map div.arrival_info h2 {
+	margin-right:  50px;
+}
+
+section.about_or article {
+	padding-left: 25px;
+	padding-right: 25px;
+	width: calc(50% - 50px);
+}
+
+section#sponsers_gallery {
+	    padding: 50px calc((100vw - 900px) / 2);
+}
+
+div.frame {
+	-webkit-overflow-scrolling:touch;
+	overflow: auto;
+	height: 600px;
+}
+
+
 
 img.seperator {
 	margin-top: -1px;
