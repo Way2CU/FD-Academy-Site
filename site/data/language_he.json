@@ -1,5 +1,6 @@
 {
     "site_title": "FD Academy",
+    "confrence_date": "7 בדצמבר 2015 • 09:00-17:00 • ת\"א,מופ״ת מכון",
     "menu_entry": "כניסה",
     "menu_lectures": "ההרצאות",
     "menu_lecturers": "המרצים",
@@ -9,6 +10,7 @@
     "menu_sponsers": "חסויות",
     "sign_now": "הרשמו עכשיו",
     "sign_now2": "להבטחת מקומך",
+    "sign_now_menu_fixed" : "הרשמו",
     "sponsership": "רוצה לתת חסות? לחץ כאן",
     "sponsership_form_title": "רוצה לתת חסות? מלא טופס",
     "payment_options": "אפשרויות תשלום - שלב ב",
