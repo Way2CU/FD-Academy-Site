@@ -346,6 +346,7 @@ div.menu nav a:before {
 div.menu a.sign_now {
 	display: inline-block;
 	vertical-align: middle;
+	top:0px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	margin-left: 40px;
@@ -353,7 +354,11 @@ div.menu a.sign_now {
 	transition: all 0.3s;
  }
 
- div.menu a.sign_now:hover {
+div.menu a.sign_now:active {
+	top:5px;
+}
+
+div.menu a.sign_now:hover {
 	color: #34495E;
  }
 
