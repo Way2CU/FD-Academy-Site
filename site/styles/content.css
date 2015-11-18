@@ -658,7 +658,7 @@ section.program:before {
 	left: 50%;
 	margin-left: -1.5px;
 	width: 3px;
-	height: 90%;
+	height: 100%;
 	background-color: #2DBDB6;
 
 }
@@ -765,7 +765,7 @@ section.program article:nth-child(odd):before {
 	-ms-transform: rotate(45deg);
 	-o-transform: rotate(45deg);
 	transform: rotate(45deg);
-	z-index: 0;
+	z-index: -1;
 }
 
 section.program article:nth-child(even) {
@@ -782,10 +782,11 @@ section.program article:last-of-type {
 
 section.program article h3 {
 	display: block;
-	direction: ltr;
-	text-align: left;
+	font-size: 1.3em;
+	direction: rtl;
+	text-align: right;
 	padding: 10px;
-	padding-left:  55px;
+	padding-right: 55px;
 	color: white;
 	background-color: #2DBDB6;
 	position: relative;
@@ -796,7 +797,7 @@ section.program article h3:before {
 	position: absolute;
 	top: 50%;
 	margin-top: -25px;
-	left: 5px;
+	right: 5px;
 	background-image: url(../images/icons-sprite.svg);
 	background-repeat: no-repeat;
 	background-position: -50px 0px ;
