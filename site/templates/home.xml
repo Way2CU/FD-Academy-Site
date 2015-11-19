@@ -16,23 +16,6 @@
 
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">\
 			<cms:raw file="parts/gtm.txt"/>
-
-			<cms:desktop>
-				<div class="frame">
-					<iframe 
-						frameborder="0"
-						width="800"
-						height="500"
-						>
-					</iframe>
-
-					<a href="javascript:void(0)" class="sign_now">
-						<cms:text constant="close"/>
-					</a>
-					
-				</div>
-			</cms:desktop>
-
 			
 			<div class="payment_dialog">
 
