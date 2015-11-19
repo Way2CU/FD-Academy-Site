@@ -430,7 +430,6 @@ div.person {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 40px;
-	width: 320px;
 	position:  relative;
 }
 
@@ -442,58 +441,33 @@ div.person figure {
 	position: relative;
 }
 
-div.person:hover figure:before {
-	-webkit-transform: rotate(360deg);
-	   -moz-transform: rotate(360deg);
-	    -ms-transform: rotate(360deg);
-	     -o-transform: rotate(360deg);
-	        transform: rotate(360deg);
-}
 
-div.person figure:before {
-	content: "";
-	position: absolute;
-	top: 50%;
-	margin-top: -170px;
-	left: 50%;
-	margin-left: -170px;
-	background-image: url(../images/rounded_bg.svg);
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: 340px 340px;
-	border-radius: 50%;
-	width: 340px;
-	height: 340px;
-	z-index: -1;
-	transition: all 0.8s;
-}
 
 div.person figure img {
 	border-radius: 50%;
+	border: 3px solid #2DBDB6;
 }
 
-section.martzim div.social {
+div.person div.social {
 	position: absolute;
-	top: 0px;
-	left: 50%;
-	text-align:  center;
-	margin-left: -150px;
-	width: 100%;
-	height: 100%;
+	top: 3px;
+	right: 50%;
+	margin-right: -100px;
+	text-align: center;
 	background-color: rgba(0, 0, 0, 0.7);
 	border-radius: 50%;
-	width: 300px;
-	height: 300px;
+	width: 200px;
+	height: 200px;
 	z-index: 0;
 	opacity: 0;
 	transition: all 0.8s;
 }
 
-section.martzim div.social:hover {
+div.person div.social:hover {
 	opacity: 1;
 }
 
-section.martzim div.social a {
+div.person div.social a {
 	display: inline-block;
 	vertical-align: top;
 	margin-left: 10px;
@@ -556,10 +530,10 @@ section.program:before {
 	position: absolute;
 	top: 130px;
 	left: 50%;
-	margin-left: -1.5px;
-	width: 3px;
+	margin-left: -1px;
 	height: 90%;
-	background-color: #2DBDB6;
+	border: 1px dashed black;
+	z-index: 0;
 
 }
 
@@ -600,8 +574,8 @@ section.program article {
 	margin-left: auto;
 	margin-right: auto;
 	padding: 10px;
-	background-color: white;
-	-webkit-filter: drop-shadow(0px 0px 2px rgba(31,127,120,0.4));
+	z-index: 0;
+
 }
 
 section.program article:last-of-type {
@@ -611,14 +585,14 @@ section.program article:last-of-type {
 section.program article:before {
 	content: "";
 	position: absolute;
-	bottom: 80%;
+	top: 0%;
 	left: 50%;
-	margin-left:  -20px;
+	margin-left: -20px;
 	width: 40px;
 	height: 40px;
 	border-top: none;
 	border-right: none;
-	background-color: white;
+	background-color: #2DBDB6;
 	-webkit-transform: rotate(45deg);
 	-moz-transform: rotate(45deg);
 	-ms-transform: rotate(45deg);
@@ -632,12 +606,12 @@ section.program article:after {
 	position: absolute;
 	bottom: 130%;
 	left: 50%;
-	margin-left:  -16px;
-	height: 30px;
-	width: 30px;
+	margin-left: -9.5px;
+	height: 15px;
+	width: 15px;
 	border-radius: 50%;
 	border: 2px solid #2DBDB6;
-	background-color: white;
+	background-color: #2DBDB6;
 }
 
 section.program article h3 {
@@ -671,7 +645,9 @@ section.program article p {
 	text-align: right;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	padding-right: 10px;
 	font-size: 1em;
+	background-color: rgb(255, 255, 255);
 }
 
 section.price {
@@ -953,15 +929,17 @@ section.about_or div.person {
 	margin-bottom: 0px;
 }
 
+section.about_or div.person  div.info {
+	display: none;
+}
 
 section.about_or article {
 	display: block;
-	margin-top:  10px;
+	margin-top: 10px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: right;
-	width: 95%
-	
+	width: 95%;	
 }
 
 section.about_or article strong {
