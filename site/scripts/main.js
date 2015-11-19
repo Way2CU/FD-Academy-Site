@@ -63,7 +63,7 @@ Site.on_load = function() {
 	var form_pre = $('div.form_wrap.buyer')
 	var btn_close = $('a.close');
 	var btn_close_payment = $('a.close_payment');
-	var btn_credit = $('a#credit');
+	//var btn_credit = $('a#credit');
 	var frame = $('div.frame');
 	var frame_src = $('div.frame iframe');
 	var btn_iframe = $('div.frame a');
@@ -145,23 +145,23 @@ Site.on_load = function() {
 
 
 	//  function for opening iframe 
-	if (!Site.is_mobile()) {
-		btn_credit.on('click', function() {
-			var href = $(this).attr('data-credit');
-			payment_option_dialog.removeClass('open');
-			frame.addClass('open');
-			frame_src.attr('src',href);
-		})
+	//if (!Site.is_mobile()) {
+	//	btn_credit.on('click', function() {
+	//		var href = $(this).attr('data-credit');
+	//		payment_option_dialog.removeClass('open');
+	//		frame.addClass('open');
+	//		frame_src.attr('src',href);
+	//	})
 
-	} else  {
+	//} else  {
 
-		btn_credit.on('click', function() {
-			var item = $(this);
-			var href = $(this).attr('data-credit');
-			payment_option_dialog.removeClass('open');
-			item.attr('href',href);
-		})
-	}
+	//	btn_credit.on('click', function() {
+	//		var item = $(this);
+	//		var href = $(this).attr('data-credit');
+	//		payment_option_dialog.removeClass('open');
+	//		item.attr('href',href);
+	//	})
+	//}
 
 	//  function for closing iframe
 

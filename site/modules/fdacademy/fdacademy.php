@@ -13,16 +13,16 @@ use Core\Events;
 class fdacademy extends Module {
     private static $_instance;
 
-    private $api_domain = 'crm.zoho.com';
-    private $api_path = '/crm/private/xml/Leads/insertRecords?newFormat=1&xmlData=';
-
     /**
      * Constructor
      */
     protected function __construct() {
         parent::__construct(__FILE__);
 
-        Events::connect('contact_form', 'email-sent', 'handle_send', $this);
+		$mailer = new FdMailer($this);
+
+		if (class_exists('contact_form'))
+			contact_form::getInstance()->registerMailer('fd', $mailer);
     }
 
     /**
@@ -65,20 +65,43 @@ class fdacademy extends Module {
      * @return boolean
      */
     public function handle_send($mailer, $recipient, $subject, $data) {
+    }
+}
+
+
+class FdMailer extends ContactForm_Mailer {
+	private $variables;
+    private $api_domain = 'crm.zoho.com';
+    private $api_path = '/crm/private/xml/Leads/insertRecords?newFormat=1&xmlData=';
+	private $parent;
+
+
+	public function __construct($parent) {
+		$this->parent = $parent;
+	}
+
+	public function get_title() {
+		return 'ZOHO CRM';
+	}
+
+	public function start_message() {
+	}
+
+	public function send() {
         // prepare data
         $find = array();
         $replace = array();
-        foreach ($data as $key => $value) {
+        foreach ($this->variables as $key => $value) {
             $find[] = '%'.$key.'%';
             $replace[] = $value;
         }
 
         // prepare content
-        $content = file_get_contents($this->path.'data/api.xml');
+        $content = file_get_contents($this->parent->path.'data/api.xml');
         $content = str_ireplace($find, $replace, $content);
 
         $params = array(
-            'authtoken'    => 'be0ff8b374146befa57ff1d76cdb4e60',
+            'authtoken'    => 'c01f2b26dd0e6c2ea30be7fefa10979a',
             'scope'        => 'crmapi',
             'xmlData'      => $content
         );
@@ -95,17 +118,43 @@ class fdacademy extends Module {
 
         $socket = fsockopen('ssl://'.$this->api_domain, 443, $error_number, $error_string, 5);
 
-        // store request
-        file_put_contents(__FILE__.'.request.txt', $header.$content_string);
 
         if ($socket) {
             // send and receive data
             fputs($socket, $header.$content_string);
             $response = stream_get_contents($socket, 1024);
-            // store response
-            file_put_contents(__FILE__.'.response.txt', $response);
             trigger_error($response, E_USER_NOTICE);
             fclose($socket);
         }
-    }
+
+		return true;
+	}
+
+	public function set_sender($address, $name=null) {
+	}
+
+	public function add_recipient($address, $name=null) {
+	}
+
+	public function add_cc_recipient($address, $name=null) {
+	}
+
+	public function add_bcc_recipient($address, $name=null) {
+	}
+
+	public function add_header_string($key, $value) {
+	}
+
+	public function set_subject($subject) {
+	}
+
+	public function set_variables($variables) {
+		$this->variables = $variables;
+	}
+
+	public function set_body($plain_body, $html_body=null) {
+	}
+
+	public function attach_file($file_name, $attached_name=null, $inline=false) {
+	}
 }
