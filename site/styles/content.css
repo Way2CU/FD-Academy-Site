@@ -527,10 +527,11 @@ section.martzim > h2:before {
 div.person {
 	display: inline-block;
 	vertical-align: top;
-	text-align:  right;
+	text-align: right;
+	margin-right: 25px;
 	margin-bottom: 40px;
-	width: 50%;
-	position:  relative;
+	width: calc(50% - 25px);
+	position: relative;
 
 }
 
