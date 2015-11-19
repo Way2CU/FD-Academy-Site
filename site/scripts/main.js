@@ -143,26 +143,6 @@ Site.on_load = function() {
 		payment_option_dialog.removeClass('open');
 	})
 
-
-	//  function for opening iframe 
-	//if (!Site.is_mobile()) {
-	//	btn_credit.on('click', function() {
-	//		var href = $(this).attr('data-credit');
-	//		payment_option_dialog.removeClass('open');
-	//		frame.addClass('open');
-	//		frame_src.attr('src',href);
-	//	})
-
-	//} else  {
-
-	//	btn_credit.on('click', function() {
-	//		var item = $(this);
-	//		var href = $(this).attr('data-credit');
-	//		payment_option_dialog.removeClass('open');
-	//		item.attr('href',href);
-	//	})
-	//}
-
 	//  function for closing iframe
 
 	btn_iframe.on('click',function() {
