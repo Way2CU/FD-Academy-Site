@@ -335,24 +335,52 @@
 				cms:eval="src"	
 				/>
 
-			<section class="about_or">
+			<cms:desktop>	
 
-				<h2 ><cms:text constant="story_beyond_label"/></h2>
+				<section class="about_or">
 
-				<cms:module
-					name="articles"
-					action="show"
-					text_id="about_or"
-					template="parts/article_price.xml"
-					/>	
+					<h2 ><cms:text constant="story_beyond_label"/></h2>
 
-				<cms:module
-					name="gallery"
-					action="show_image"
-					text_id="or"
-					template="parts/lectureres.xml"
-					/>
-			</section>
+					<cms:module
+						name="articles"
+						action="show"
+						text_id="about_or"
+						template="parts/article_price.xml"
+						/>	
+
+					<cms:module
+						name="gallery"
+						action="show_image"
+						text_id="or"
+						template="parts/lectureres.xml"
+						/>
+				</section>
+
+			</cms:desktop>
+
+
+			<cms:mobile>	
+
+				<section class="about_or">
+
+					<h2 ><cms:text constant="story_beyond_label"/></h2>
+
+					<cms:module
+						name="gallery"
+						action="show_image"
+						text_id="or"
+						template="parts/lectureres.xml"
+						/>
+
+					<cms:module
+						name="articles"
+						action="show"
+						text_id="about_or"
+						template="parts/article_price.xml"
+						/>	
+				</section>
+
+			</cms:mobile>
 
 			<section  id="sponsers_gallery">
 				
