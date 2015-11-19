@@ -1072,7 +1072,8 @@ section.about_or > h2:before {
 section.about_or div.person {
 	display: inline-block;
 	vertical-align: top;
-	text-align:  center;
+	text-align: center;
+	margin-right: 0px;
 	margin-bottom: 0px;
 	width: 50%;
 }
