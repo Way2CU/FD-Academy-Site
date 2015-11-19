@@ -3,7 +3,7 @@
 
 		<figure class="$params['text_id']" cms:eval="class">
 			<img 
-				src="gallery::getThumbnailById($params['id'], null, 300,Thumbnail::CONSTRAIN_BOTH)"
+				src="gallery::getThumbnailById($params['id'], null, 200,Thumbnail::CONSTRAIN_BOTH)"
 				alt="$params['title'][$language]"
 				cms:eval="src,alt"
 				/>
@@ -21,9 +21,12 @@
 				cms:eval="group"
 				/>
 		</div>
-
-		<p><cms:var param="title" multilanguage="yes"/></p>
-		<p><cms:var param="description" multilanguage="yes"/></p>
+		
+		<div class="info">
+			<p><cms:var param="title" multilanguage="yes"/></p>
+			<p><cms:var param="description" multilanguage="yes"/></p>
+		</div>
+		
 
 	</div>
 
