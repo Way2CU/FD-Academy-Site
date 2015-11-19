@@ -1174,6 +1174,13 @@ header.thankyou p {
 
 header.thankyou {
 	padding-right: 50px;
+}
+
+div.menu img.logo {
+	display: inline-block;
+	vertical-align: middle;
+	width: 150px;
+	height: 100px;
 }	
 
 header h1 {
@@ -1182,10 +1189,6 @@ header h1 {
 }
 
 header p {
-	padding-right: 60px;
-}
-
-header strong {
 	padding-right: 60px;
 }
 
@@ -1207,28 +1210,51 @@ section.lectures article {
 }
 
 section.martzim div.person {
-	width: 400px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 800px;
 }
 
 section.program article {
 	width: 350px;
 }
 
-section.program article:nth-child(even):before {
-	right: 94%;
+section.program article:nth-child(even) h3:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    right: 100%;
+    width: 0;
+    height: 0;
+    border-top: 24px solid transparent;
+    border-right: 50px solid #2DBDB6;
+    border-bottom: 24px solid transparent;
 }
 
-section.program article:nth-child(even):after {
-	right:calc(100% + 98px);
+section.program article:nth-child(odd) h3:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    left: 100%;
+    width: 0;
+    height: 0;
+    border-top: 24px solid transparent;
+    border-left: 50px solid #2DBDB6;
+    border-bottom: 24px solid transparent;
 }
 
-section.program article:nth-child(odd):before {
-	left: 94%;
+section.program article:nth-child(odd) h3:before {
+	right: -133px;
 }
 
-section.program article:nth-child(odd):after {
-	left:calc(100% + 98px);
+section.program article:nth-child(even) h3:before {
+	left: -131px;
 }
+
+
 
 section.price div.slider {
 	width: 700px;
@@ -1243,9 +1269,8 @@ section.map div.arrival_info h2 {
 }
 
 section.about_or article {
-	padding-left: 25px;
-	padding-right: 25px;
-	width: calc(50% - 50px);
+	padding-right: 60px;
+	width: calc(50% - 60px);
 }
 
 section#sponsers_gallery {
