@@ -9,9 +9,9 @@
 			<cms:module name="head_tag" action="print_tag"/>
 			<cms:raw file="parts/external.txt"/>
 			<meta property="og:title" content="יום עיון - Update/Upgrade" />
-			<meta property="og:description" content="פייסבוק משיקה את כלי הפרסום החדשים וזו ההזדמנות שלכם להתעדכן! 17.12.15 - הרשמו עכשיו" />
-			<meta property="og:url" content="http://www.fd-academy.co.il" />
-			<meta property="og:image" content="http://www.fd-academy.co.il/images/fbog.png" />
+			<meta property="og:description" content="פייסבוק משיקה את כלי הפרסום החדשים וזו ההזדמנות שלכם להתעדכן! 7.12.15 - הרשמו עכשיו" />
+			<meta property="og:url" content="http://fd-academy.co.il" />
+			<meta property="og:image" content="http://www.fd-academy.co.il/site/images/fbog.png" />
 		</head>
 
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">\
