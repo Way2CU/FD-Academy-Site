@@ -892,9 +892,8 @@ section.price div.slider img {
 	position: absolute;
 	top: 50%;
 	right: 100%;
-	margin-top: -75px;
+	margin-top: -25px;
 	width: 150px;
-	
 	transition: all 0.3s;
 }
 
