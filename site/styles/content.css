@@ -890,7 +890,7 @@ section.price div.slider {
 
 section.price div.slider img {
 	position: absolute;
-	top: 50%;
+	top: 75%;
 	right: 100%;
 	margin-top: -25px;
 	width: 150px;
@@ -1123,7 +1123,7 @@ section#sponsers_gallery h2 {
 	color: #2DBDB6;
 	border: 1px solid #2DBDB6;
 	position: relative;
-	width: 130px;
+	width: 170px;
 }
 
 section#sponsers_gallery h2:before {
@@ -1132,15 +1132,12 @@ section#sponsers_gallery h2:before {
 	top: 50%;
 	margin-top:  -51px;
 	left: 50%;
-	margin-left:  -101px;
-	width: 200px;
+	margin-left:  -125px;
+	width: 250px;
 	height: 100px;
 	border: 1px solid #2DBDB6;
 }
 
-section#sponsers_gallery h2:last-of-type {
-	margin-bottom: 0px;
-}
 
 section#sponsers_gallery img {
 	display: inline-block;
