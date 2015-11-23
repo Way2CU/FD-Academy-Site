@@ -531,7 +531,7 @@ section.program:before {
 	top: 130px;
 	left: 50%;
 	margin-left: -1px;
-	height: 90%;
+	height: 97%;
 	border: 1px dashed black;
 	z-index: 0;
 
@@ -768,7 +768,7 @@ section.price div.slider img {
 	position: absolute;
 	top: 50%;
 	right: 100%;
-	margin-top: -75px;
+	margin-top: -25px;
 	width: 150px;
 	
 	transition: all 0.3s;
@@ -973,7 +973,7 @@ section#sponsers_gallery h2 {
 	color: #2DBDB6;
 	border: 1px solid #2DBDB6;
 	position: relative;
-	width: 130px;
+	width: 140px;
 }
 
 section#sponsers_gallery h2:before {
@@ -989,7 +989,7 @@ section#sponsers_gallery h2:before {
 }
 
 section#sponsers_gallery h2:last-of-type {
-	margin-bottom: 0px;
+	margin-bottom: 30px;
 }
 
 section#sponsers_gallery img {
