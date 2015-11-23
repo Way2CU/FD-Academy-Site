@@ -148,6 +148,15 @@ Site.on_load = function() {
 	btn_iframe.on('click',function() {
 		frame.removeClass('open');
 	})
+
+        // handle analytics event
+
+	$('form').first().on('analytics-event', function(event, data) {
+		if (!data.error)
+			dataLayer.push({
+            	'event':'leadSent'
+            });
+	});
 };	
 
 
